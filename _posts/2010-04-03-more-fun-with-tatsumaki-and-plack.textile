@@ -143,7 +143,7 @@ To demonstrate the use of this two middleware, "I've wrote a small application":
 will return
 
 {% highlight javascript %}
-    [{"href":"http://lumberjaph.net/blog/index.php/feed/","type":"application/rss+xml","title":"iâm a lumberjaph RSS Feed"}]
+    [{"href":"http://lumberjaph.net/blog/index.php/feed/","type":"application/rss+xml","title":"i'm a lumberjaph RSS Feed"}]
 {% endhighlight %}
 
 This application is composed of one handler, that handle only *GET* request. The request will fetch the url given in the *url* parameter, scrap the content to find the links to feeds, and cache the result with Redis. The response is a JSON string with the informations.
