@@ -1,0 +1,11 @@
+---
+layout: post
+category: devops
+title: Where we talk about graphing events in Graphite
+---
+
+Graphite is thea nice tool.
+
+curl http://localhost:8090/events/ -d '{"what": "deploy_stage", "tags" : "deploy,stage"}'
+
+then by going to http://g.lumberjaph.net/graphlot/?&from=-15minute&until=-0hour&target=collectdlumberjaph_net.memory.memory-used&events=deploy# you can do correlation.
