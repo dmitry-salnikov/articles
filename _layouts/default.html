@@ -3,52 +3,45 @@
 <head>
    <meta charset="utf-8" />
    <title>{{ page.title }}</title>
-   <meta name="author" content="franck cuny" />
-   <link href="http://feeds.feedburner.com/ImALumberjaph" rel="alternate" title="I'm a lumberjaph" type="application/atom+xml" />
+
+   <meta name="author" content="Franck Cuny" />
+
+   <link href="/index.atom" rel="alternate" title="I'm a lumberjaph" type="application/atom+xml" />
 
    <!--Homepage CSS-->
    <link rel="stylesheet" href="/static/css/screen.css" media="screen, projection" />
 
    <link href="/favicon.ico" rel="shortcut icon" />
+
    <link rel="openid2.provider" href="http://www.google.com/accounts/o8/ud?source=profiles" />
    <link rel="openid2.local_id" href="http://www.google.com/profiles/franck.cuny" /> 
+
    {% include analytics.html %}
+
+   <link rel="me" href="http://twitter.com/franckcuny">
+   <link rel="me" href="http://github.com/franckcuny">
+   <link rel="me" href="http://www.linkedin.com/in/franckcuny">
 </head>
+
 <body>
 
-<div class="site">
-
-  <div class="title">
-  <div class="intro">
-      This is <a class="extra" rel="author" href="/about/">Franck</a>'s blog,
-      where he <a href="/archives.html" class="extra">writes about web
-          technologies, code, graph, and Perl</a>.
+<div id="site">
+  <div id="header">
+    <h1>
+      <a href="/">I'm a lumberjaph and I'm OK.</a>
+      <span id="navigation">
+        <a href="/about/">About</a>
+        <a href="/archives.html">Archive</a>
+      </span>
+    </h1>
   </div>
-  </div>
-
 
   {{ content }}
 
   <footer>
-  <div class="footer">
-    <div class="contact">
-      <p>
-        franck cuny<br />
-        franck@lumberjaph.net
-      </p>
-    </div>
-    <div class="contact">
-      <p>
-        <a href="http://github.com/franckcuny/">github.com/franckcuny</a><br />
-        <a href="http://twitter.com/franckcuny/">twitter.com/franckcuny</a><br />
-      </p>
-    </div>
-    <div class="rss">
-      <a href="http://feeds.feedburner.com/ImALumberjaph">
-        <img src="/static/imgs/rss.png" alt="Subscribe to RSS Feed" />
-      </a>
-    </div>
-  </div>
+  <div id="footer">
+    © 2008-2012
+    <a href="/about/">Franck Cuny</a>
   </footer>
 </div>
 

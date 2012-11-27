@@ -1,17 +1,24 @@
 ---
 layout: default
 ---
-<div id="post">
-    <h2 id="post_title">
-        <span id="gplus"><g:plusone size="medium" annotation="none"></g:plusone></span><span id="actual_title"><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></span>
-    </h2>
-  
-    <span id="date">published <time datetime="{{ page.date }}" pubdate>{{ page.date | date_to_string }}</time></span>
 
-  <article>
-    {{ content }}
-  </article>
+<div id="content">
+  <div id="page">
+    <h1 class="emphnext">
+        <a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>
+        <span class="post-date">{{ page.date | date_to_string }}<span>
+    </h1>
 
-  <hr />
-  {% include disqus.html %}
+    <article>
+      {{ content }}
+    </article>
+
+    {% include disqus.html %}
+
+    <div id="pagination">
+      <a href="/">Home</a>
+      |
+      <a href="/archives.html">Archives</a>
+    </div>
+  </div>
 </div>
