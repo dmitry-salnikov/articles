@@ -21,25 +21,31 @@ of place where they use Perl, and the amount of traffic they deal with.
 Jeremey started his talk by explaining what is their current problem:
 they have hundred of hosts in multiple data center, and they collect
 continuously dozen of metrics.  They looked at MySQL to store them,
-but it was too slow to support their write rate.  Another thing
-important for them is that mostly only the recent data matters.  They
+but it was too slow to support the writes.  Another thing
+important for them is that mostly only the most recent data matters.  They
 want to know what's going on *now*, they don't really care about the
 past.
 
 So their goal is simple: they need something fast, *really* fast, and
-simple.
+simple.  That's where Redis enter the game.
 
-That's where Redis enter the game.  They need data replication, but
+They want data replication, but
 Redis don't have this feature: there's only a master/slave replication
 mechanism (so, one way), and they need a solution with multi master,
-where a node becoming master does not drop data.
+where a node becoming master does not drop data. They address this
+issue with a "syncer", that I'll describe later.
 
 Because Redis is single thread, and servers have multiple cores, they
 start 8 process on each node to take advantages of them.
 
 To me, the main benefit of Redis over Memcached is that you can use
-it as a data structure server.  The structure they use the most is the
-[*ZSET*](http://redis.io/commands#sorted_set).  The format to store a metric is:
+it as a data structure server.  If you only need something to store
+key value, I'll prefer to stick to memcached: the community around is
+bigger, there's a lot of well know patterns, and a lot of big
+companies are contributing to it (lately, Twitter and FaceBook).
+
+The structure they use the most are the
+[*sorted set*](http://redis.io/commands#sorted_set).  The format to store a metric is:
 
  *  key: `$time_period:$host:$metric` (where the $timeperiod is
     usually a day)
@@ -90,7 +96,19 @@ AnyEvent::Redis::Federated`, I know at least
 [one person](http://search.cpan.org/perldoc?indirect) who would have
 probably said something :).
 
+## Concern
+
+The idea seems fine, but, as one person noted during the Q&A, how will
+this scale when you have more than 2 or 4 nodes in your cluster ?
+Since each process' syncer need to talk to *all* the other nodes, it
+will probably be very expensive for this process to gather information
+from all the nodes and write them.  Also, by adding more nodes, you're
+storing less information into each process, since you replicate
+everything.  Maybe a good solution is to keep many small cluster of
+2 to 4 nodes, and let each of them deal with some specific metrics.
+
 The module is not yet used in production, but they've tested it
-heavily, in a lot of conditions.  They intent to use it soon with some
+heavily, in a lot of conditions (but I would note that there's no unit
+test :).  They intent to use it soon with some
 home made dashboard to display the metrics.
 
