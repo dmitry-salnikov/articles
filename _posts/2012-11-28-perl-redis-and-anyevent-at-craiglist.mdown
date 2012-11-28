@@ -96,7 +96,7 @@ AnyEvent::Redis::Federated`, I know at least
 [one person](http://search.cpan.org/perldoc?indirect) who would have
 probably said something :).
 
-## Concern
+## Concerns
 
 The idea seems fine, but, as one person noted during the Q&A, how will
 this scale when you have more than 2 or 4 nodes in your cluster ?
