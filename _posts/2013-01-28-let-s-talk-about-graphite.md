@@ -93,7 +93,7 @@ Another one where we lost a good amount of time: if you're smallest retention is
 
 The best "documentation" for `statsd`, so far, are the discussions in the [issues](https://github.com/etsy/statsd/issues).
 
-We have some other complains about Graphite.  Even after reading the [rationals](http://graphite.wikidot.com/whisper#toc1) for Whisper, I'm not convinced it was a good idea to replace RRD with it.  We also discovered some issues with (Graphite's functions)[http://if.andonlyif.net/blog/2013/01/graphites-derivative-function-lies.html].
+We have some other complains about Graphite.  Even after reading the [rationals](http://graphite.wikidot.com/whisper#toc1) for Whisper, I'm not convinced it was a good idea to replace RRD with it.  We also discovered some issues with [Graphite's functions](http://if.andonlyif.net/blog/2013/01/graphites-derivative-function-lies.html).
 
 ## Meetup
 
