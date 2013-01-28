@@ -22,7 +22,7 @@ Our default retention policy is: `10s:1h, 1m:7d, 15m:30d, 1h:2y`.  We don't beli
 
 ### System
 
-We don't do anything fancy here.  We collect system information with `collectd`, and things that interest us are: CPUs, Memory usage, network traffic, etc.
+We don't do anything fancy here.  `collectd` is running on each host, and then write to a central `collectd` server.
 
 ### Services
 
@@ -83,15 +83,17 @@ Also, it will also multiplex the metric: we want the same key to end-up under *h
 
 This way we can find the metric aggregated by application, or if we think there's a problem in one machine, we can compare per host the same metric.
 
-## Other problems with statsd
+## Other problems with statsd and Graphite
 
 I don't know if it's a problem with vocabulary, or our maths (I admit that my maths are not good, but I trust Abe and Hachi's maths), but you can't imagine how much time we spend debating around the words gauges, counters and aggregates.  What they mean, how they work, when to use them.  So here's my questions: are we missing something obvious?  do we over think it? or is it also confusing, and people are misusing them?
 
 Let's take **gauge** as an example.  If you read [the documentation for gauges](https://github.com/etsy/statsd/blob/master/README.md#gauges), it seems very simple: you send a value, and it will be recorded.  Well, the thing is it will record only the last value send during the 10 seconds interval.  This work well when you have a cron job that will look at something every minute and report a metric to `statsd`, not if you're sending that 10 times a second (and yes, we will provide a patch for documentation soon).
 
-Another one where we lost a good amount of time. If you're smallest retention is different from the interval used by statsd to flush the data, they will be graphed incorrectly (see this [comment](https://github.com/etsy/statsd/issues/32#issuecomment-1830985)).
+Another one where we lost a good amount of time: if you're smallest retention is different from the interval used by statsd to flush the data, they will be graphed incorrectly (see this [comment](https://github.com/etsy/statsd/issues/32#issuecomment-1830985)).
 
-The best "documentation" for `statsd`, so far, are the discussions in the issues.
+The best "documentation" for `statsd`, so far, are the discussions in the [issues](https://github.com/etsy/statsd/issues).
+
+We have some other complains about Graphite.  Even after reading the [rationals](http://graphite.wikidot.com/whisper#toc1) for Whisper, I'm not convinced it was a good idea to replace RRD with it.  We also discovered some issues with (Graphite's functions)[http://if.andonlyif.net/blog/2013/01/graphites-derivative-function-lies.html].
 
 ## Meetup
 
