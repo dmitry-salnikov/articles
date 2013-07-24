@@ -2,21 +2,6 @@
 layout: default
 ---
 
-<div id="content">
-  <div id="page">
-    <h1 class="emphnext">
-        <a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>
-        <span class="post-date">{{ page.date | date_to_string }}<span>
-    </h1>
+<h1><a href="{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
 
-    <article>
-      {{ content }}
-    </article>
-
-    <div id="pagination">
-      <a href="/">Home</a>
-      |
-      <a href="/archives.html">Archives</a>
-    </div>
-  </div>
-</div>
+<article>{{ content }}</article>

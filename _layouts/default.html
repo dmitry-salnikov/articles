@@ -25,25 +25,44 @@
 
 <body>
 
-<div id="site">
-  <div id="header">
-    <h1>
-      <a href="/">I'm a lumberjaph and I'm OK.</a>
-      <span id="navigation">
-        <a href="/about/">About</a>
-        <a href="/archives.html">Archives</a>
-      </span>
-    </h1>
+  <div id="container">
+
+    <div id="menu">
+      <div id="menu-inner">
+        <div class="you">
+          <h2>I'm a lumberjaph and I'm OK</h2>
+        </div>
+        <div class="main">
+          <h2>Here</h2>
+          <ul>
+            <li><a href="/archives.html">Archives</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <h2>Elsewhere</h2>
+          <ul>
+            <li>Twitter</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="content">
+      {{ content }}
+    </div>
+
   </div>
 
-  {{ content }}
+  <div class="clear"></div>
 
   <footer>
-  <div id="footer">
-    © 2008-2012
-    <a href="/about/">Franck Cuny</a>
+    <div id="footer">
+      <div id="footer-left">
+      </div>
+    </div>
   </footer>
-</div>
-
+  
 </body>
 </html>
