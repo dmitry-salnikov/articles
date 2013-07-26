@@ -1,16 +1,12 @@
 ---
-layout: default
-title: I'm a lumberjaph
+layout: page
+title: Latest Posts
+description: "A simple and clean responsive Jekyll theme for words and photos."
+tags: [Jekyll, theme, themes, responsive, blog, minimalism]
 ---
-{% assign first_post = site.posts.first %}
 
-<div id="content">
-  <div id="page">
-    <h1 class="emphnext">
-        <a href="{{ first_post.url }}" rel="bookmark" title="{{ first_post.title }}">{{ first_post.title }}</a>
-        <span class="post-date">{{ first_post.date | date_to_string }}<span>
-    </h1>
-
-    <article>{{ first_post.content }}</article>
-  </div>
-</div>
+<ul class="post-list">
+  {% for post in site.posts limit:10 %}
+  <li><article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
+  {% endfor %}
+</ul>

@@ -1,7 +1,9 @@
 ---
-layout: default
+layout: page
+permalink: /talks/index.html
+title: Talks
 ---
-<div id="page">
+
 <h2>Previous and Upcoming Talks</h2>
 
 <ul>
@@ -74,4 +76,3 @@ layout: default
     <em>Catalyst Advent Calendar</em> &#8212; <a href="http://www.catalystframework.org/calendar/2009/19">Writing REST services with Catalyst</a>
     </li>
 </ul>
-</div>

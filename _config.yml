@@ -1,3 +1,53 @@
-pygments: 1
-auto: true
-markdown: kramdown
+title:            I'm a lumberjaph
+description:      I sleep all night and I code all day.
+#logo:              site-logo.jpg
+#Comment out url when working locally to resolve base urls correctly
+#url:              http://lumberjaph.net
+
+# Owner/author information
+owner:
+  name:           Franck Cuny
+  avatar:         bio-photo.jpg
+  email:          franck@lumberjaph.net
+  twitter:        franckcuny
+  github:         franckcuny
+  linkedin:       franckcuny
+  google_plus:    https://plus.google.com/109969864793728698937
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-18479905-1
+google_verify:      
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Articles
+    url: /articles
+  - title: About
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/Los_Ageles
+future:      true
+pygments:    true
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:  /:categories/:year/:month/:day/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec"]
