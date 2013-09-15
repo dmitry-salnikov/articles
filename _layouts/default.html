@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@franckcuny"/>
+  <meta name="twitter:site" content="@franckcuny"/>
+  <meta name="twitter:title" content="{{ page.title }}"/>
+  <meta name="twitter:domain" content="lumberjaph.net">
+  <meta name="twitter:description" content="{{ page.summary }}">
+  <title>{{ page.title }} | lumberjaph.net</title>
+
+  {% stylesheet lumberjaph %}
+</head>
+
+<body>
+  <div class="row">
+    <div class="large-12 large-offset-1 columns" id="header">
+      <h1><a href="/">Franck Cuny</a></h1>
+      {
+      <a href="/">writing</a>,
+      <a href="/projects.html">projects</a>,
+      <a href="/about.html">about</a>,
+      <a href="/contact.html">contact</a>
+      }
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-10 large-centered columns">
+      {{ content }}
+    </div>
+  </div>
+</body>
+
+</html>

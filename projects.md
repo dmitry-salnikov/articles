@@ -1,7 +1,6 @@
 ---
-layout: page
-permalink: /talks/index.html
-title: Talks
+layout: static
+title: Projects
 ---
 
 <h2>Previous and Upcoming Talks</h2>

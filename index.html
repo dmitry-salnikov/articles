@@ -1,12 +1,21 @@
 ---
-layout: page
-title: Latest Posts
-description: "A simple and clean responsive Jekyll theme for words and photos."
-tags: [Jekyll, theme, themes, responsive, blog, minimalism]
+layout: default
+title: I'm a lumberjaph
 ---
 
-<ul class="post-list">
-  {% for post in site.posts limit:10 %}
-  <li><article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost"><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span></a></article></li>
-  {% endfor %}
+<h2>writing</h2>
+
+<ul>
+{% for post in site.posts %}
+<li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="date">{{ post.date | date_to_string }}</span>
+</li>
+{% endfor %}
 </ul>
+
+<hr/>
+
+<footer>
+    <span>I sleep all night and I work all day.</span><br/>
+</footer>
