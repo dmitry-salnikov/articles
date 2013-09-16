@@ -34,10 +34,12 @@ I organize my files in directory. I've got a *work*, *lists*, *recipes*, *misc*,
 
 I've got an index page, with links to main section. I don't have wikiword in camelcase or things like that, so if i want to put a link to a page, I just wrote the link this way **dir_name/page_name**, then, i juste have to hit **gf** on this link to open the page.  I also use this place as a todo list manager. I've got one paragrah per day, like this : 
 
-> 2008-06-14
->  - [@context] task 1
->  - [@context] task 2
->  ...
+```
+2008-06-14
+ - [@context] task 1
+ - [@context] task 2
+ ...
+```
 
 and a bunch of vim mapping for marking complete (**,c**), work in progress (**,w**) or canceled (**,x**).
 
