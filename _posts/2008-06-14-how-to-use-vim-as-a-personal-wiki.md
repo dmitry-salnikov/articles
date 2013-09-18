@@ -17,18 +17,20 @@ I've got a **wiki** directory in my home directory, with all my files in it.  I 
 
 In my wiki directory, i've got another .vimrc with some specific mapping:
 
-    map ,I  <esc>:e index.mkd <cr>
-    map ,T  <esc>:e todo.mkd <cr>
-    map ,S  <esc>:e someday.mkd <cr>
-    map ,c  <esc>:s/^ /c/<cr>
-    map ,w  <esc>:s/^ /w/<cr>
-    map ,x  <esc>:s/^ /x/<cr>
-    map gf :e <cfile>.mkd<cr> " open page
-    map <backspace> :bp<cr>
-    imap \date <c-R>=strftime("%Y-%m-%d")<cr>
-    set tabstop=2                   " Number of spaces <tab> counts for.
-    set shiftwidth=2                " Unify
-    set softtabstop=2               " Unify
+```vimml
+map ,I  <esc>:e index.mkd <cr>
+map ,T  <esc>:e todo.mkd <cr>
+map ,S  <esc>:e someday.mkd <cr>
+map ,c  <esc>:s/^ /c/<cr>
+map ,w  <esc>:s/^ /w/<cr>
+map ,x  <esc>:s/^ /x/<cr>
+map gf :e <cfile>.mkd<cr> " open page
+map <backspace> :bp<cr>
+imap \date <c-R>=strftime("%Y-%m-%d")<cr>
+set tabstop=2                   " Number of spaces <tab> counts for.
+set shiftwidth=2                " Unify
+set softtabstop=2               " Unify
+```
 
 I organize my files in directory. I've got a *work*, *lists*, *recipes*, *misc*, ... and I put my files in this directory.
 
