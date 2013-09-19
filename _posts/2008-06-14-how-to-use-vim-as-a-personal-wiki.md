@@ -17,7 +17,7 @@ I've got a **wiki** directory in my home directory, with all my files in it.  I 
 
 In my wiki directory, i've got another .vimrc with some specific mapping:
 
-```vimml
+```vim
 map ,I  <esc>:e index.mkd <cr>
 map ,T  <esc>:e todo.mkd <cr>
 map ,S  <esc>:e someday.mkd <cr>
