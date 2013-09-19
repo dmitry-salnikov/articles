@@ -33,7 +33,6 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
-    rdiscount (2.1.6)
     redcarpet (2.3.0)
     safe_yaml (0.7.1)
     sass (3.2.10)
@@ -53,5 +52,5 @@ DEPENDENCIES
   RedCloth
   jekyll
   jekyll-assets
-  rdiscount
+  redcarpet
   sass

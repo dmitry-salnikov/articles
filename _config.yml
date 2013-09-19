@@ -1,11 +1,9 @@
 permalink: /:title/
 pygments: true
-markdown: rdiscount
+markdown: redcarpet
 name: lumberjaph.net
-rdiscount:
-  extensions:
-    - smart
-    - footnotes
+redcarpet:
+    extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
 assets:
   compress:
     css:  sass
