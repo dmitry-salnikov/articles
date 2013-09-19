@@ -6,7 +6,7 @@ summary: In which I add a few functions for my vim wiki.
 
 I've added a new function to my .vimrc for creating quickly a new task:
 
-```
+```vim
 function! CreateTask()
     let context = input("Enter context: ")
     exe ":set noautoindent"
