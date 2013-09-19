@@ -1,12 +1,12 @@
 ---
 layout: post
-category: app
 title: keep your zshrc simple
+summary: In which I explain how I maintain my zsh configuration
 ---
 
 Keep your .zshrc simple. Mine looks like this :
 
-{% highlight bash %}
+```sh
 autoload -U compinit zrecompile
 zsh_cache=${HOME}/.zsh_cache
 mkdir -p $zsh_cache
@@ -19,11 +19,12 @@ for zshrc_snipplet in ~/.zsh.d/S[0-9][0-9]*[^~] ; do
     source $zshrc_snipplet
 done
 function history-all { history -E 1 }
-{% endhighlight %}
+```
 
-and then, in my .zsh.d directory, i've got:
+and then, in my **.zsh.d** directory, I've got:
 
-bc. S10_zshopts
+```
+S10_zshopts
 S20_environment
 S30_binds
 S40_completion
@@ -31,5 +32,6 @@ S50_aliases
 S60_prompt
 S71_ssh
 S72_git
+```
 
-All my aliases are in the same file, it's much easier to search/find/add
+All my aliases are in the same file, it's much easier to search/find/add.
