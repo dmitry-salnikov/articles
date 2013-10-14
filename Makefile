@@ -8,4 +8,4 @@ server: clean
 	bundle exec jekyll server --watch
 
 publish: build
-	@rsync -avz --exclude Makefile --exclude README.md _site/ franck@198.199.119.67:~/sites/lumberjaph.net
+	@rsync -avz --exclude Makefile --exclude README.md _site/ franck@lumberjaph.net:~/sites/lumberjaph.net
