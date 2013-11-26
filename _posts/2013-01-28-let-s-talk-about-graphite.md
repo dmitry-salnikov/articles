@@ -1,6 +1,6 @@
 ---
 layout: post
-category: devops
+summary: In which I share my experience with Graphite
 title: Let's talk about Graphite
 ---
 

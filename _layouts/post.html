@@ -1,28 +1,30 @@
 ---
 layout: default
 ---
-<h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-<p class="date">{{ page.date | date_to_string }}</p>
+{% if page.previous.url %} 
+    <p id="bigleft"><a href="{{page.previous.url}}">&laquo;</a></p><br />
+{% endif %} 
+{% if page.next.url %} 
+    <p id="bigright"><a href="{{page.next.url}}">&raquo;</a></p> 
+{% endif %} 
 
-{{ content }}
+<div id="entry">
+  {{ content }}
 
-<hr />
+  <p class="timestamp">
+    {% if page.previous.url %} 
+      <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> |
+    {% endif %}
 
-<div id="call-to-action">
-    <h3>Read More</h3>
-    <ul>
-    {% for post in site.related_posts %}{% if post.url != page.url %}
-    <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        ({{ post.date | date_to_string }})
-    </li>
-    {% endif %}{% endfor %}
-    </ul>
+    {{ page.date | date_to_string }}
+
+    {% if page.next.url %} 
+      | <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
+    {% endif %} 
+  </p>
+
 </div>
 
-<hr/>
-
-<footer>
-    <span>I sleep all night and I work all day.</span><br/>
-</footer>
+{% include footer.html %}

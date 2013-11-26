@@ -8,7 +8,7 @@ Today I assisted to two tech. talks.  One of them was our "Reading Group" sessio
 
 ## Say's tech talk
 
-I'm trying to organize at [work](http://saymedia.com), every two weeks during lunch time, a session where engineers can discuss about an article, tool, or paper they find interesting.  Today we were a very small group (only 4 peoples), and we talked about two tools that [Masa](http://sekimura.typepad.com/blog/) wanted to explore: [Kage](https://github.com/cookpad/kage) and ]HTTP Archive](http://www.igvita.com/2012/08/28/web-performance-power-tool-http-archive-har/).
+I'm trying to organize at [work](http://saymedia.com), every two weeks during lunch time, a session where engineers can discuss about an article, tool, or paper they find interesting.  Today we were a very small group (only 4 peoples), and we talked about two tools that [Masa](http://sekimura.typepad.com/blog/) wanted to explore: [Kage](https://github.com/cookpad/kage) and [HTTP Archive](http://www.igvita.com/2012/08/28/web-performance-power-tool-http-archive-har/).
 
 ### Kage
 

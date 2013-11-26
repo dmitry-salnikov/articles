@@ -3,7 +3,9 @@ layout: static
 title: Projects
 ---
 
-<h2>Previous and Upcoming Talks</h2>
+<div id='wrapper'>
+
+<h4>Previous and Upcoming Talks</h4>
 
 <ul>
   <li><article itemscope itemtype="http://data-vocabulary.org/Event" class="talk">
@@ -78,3 +80,6 @@ title: Projects
     <em>Catalyst Advent Calendar</em> &#8212; <a href="http://www.catalystframework.org/calendar/2009/19">Writing REST services with Catalyst</a>
     </li>
 </ul>
+
+</div>
+

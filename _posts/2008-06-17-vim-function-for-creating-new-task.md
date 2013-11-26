@@ -6,7 +6,7 @@ summary: In which I add a few functions for my vim wiki.
 
 I've added a new function to my .vimrc for creating quickly a new task:
 
-```vim
+{% highlight vim %}
 function! CreateTask()
     let context = input("Enter context: ")
     exe ":set noautoindent"
@@ -15,8 +15,8 @@ function! CreateTask()
     exe ":set autoindent"
     exe ":startinsert"
 endfunction
-```
+{% endhighlight %}
 
 and then this mapping: `map ct <esc>:call CreateTask()<cr>`
 
-Now, I've just to hit **,n**, type my context, a new line will be inserted and I just have to create my task.
+Now, I've just to hit `,n` and type my context. A new line will be inserted and I just have to create my task.

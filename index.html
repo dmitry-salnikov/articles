@@ -1,21 +1,33 @@
 ---
 layout: default
-title: I'm a lumberjaph
 ---
 
-<h2>writing</h2>
+{% assign post = site.posts.first %}
 
-<ul>
-{% for post in site.posts %}
-<li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-    <span class="date">{{ post.date | date_to_string }}</span>
-</li>
-{% endfor %}
-</ul>
+<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-<hr/>
+{% if post.previous.url %} 
+    <p id="bigleft"><a href="{{post.previous.url}}">&laquo;</a></p><br />
+{% endif %} 
+{% if post.next.url %} 
+    <p id="bigright"><a href="{{post.next.url}}">&raquo;</a></p> 
+{% endif %} 
 
-<footer>
-    <span>I sleep all night and I work all day.</span><br/>
-</footer>
+<div id="entry">
+  {{ post.content }}
+
+  <p class="timestamp">
+    {% if post.previous.url %} 
+      <a href="{{post.previous.url}}">&laquo; {{post.previous.title}}</a> |
+    {% endif %}
+
+    {{ post.date | date_to_string }}
+
+    {% if post.next.url %} 
+      | <a href="{{post.next.url}}">{{post.next.title}} &raquo;</a> 
+    {% endif %} 
+  </p>
+
+</div>
+
+{% include footer.html %}

@@ -1,0 +1,38 @@
+---
+layout: post
+summary: In which I explain how to contribute to Dancer.
+title: How to contribute to Dancer
+---
+
+For our development projects, we rely a lot on Github. Lately, more and more people started contributing to Dancer, but not all of them are familiar with Github or git. Here is a little step-by-step guide on how to contribute. You don't need to be a Perl expert to contribute, you can provide help by correcting documentation error, or adding a new recipe to our cookbook.
+
+## the code
+
+The main repository is hosted [here](http://github.com/sukria/dancer). There are two main branches:
+
+* master
+* devel
+
+In the master branch we accept only bug fixes and doc fixes/updates. The current master branch will be the future 1.2 version.
+
+The devel branch is where we add new features, or improve existing features.
+
+## contributing
+
+First, go to [github.com/sukria/dancer](http://github.com/sukria/dancer) and click on the "fork" button. Now, here is a little tutorial on how to fetch the repository, list the local and remote branches, and track the remote devel branch.
+
+Now that you know what the purpose of each branch is, you can decide to work on master or devel (`git checkout devel` to switch branch).
+
+## sending your patch
+
+As I've previously stated, we rely a lot on the github features and interface. So now you've written your patch. First, be sure to provide one or more tests, and to run the test suite (with `make test` or `prove -r t/`). If all the tests pass, you can send a pull request. For this, you go on your own fork on github (http://github.com/$user/dancer), and you click on the "Pull Request" button.
+
+You can at any time see all the commits done by others that have not yet been merged into one of our branches at [this url](http://github.com/sukria/Dancer/forkqueue).
+
+## reporting and/or fixing bugs
+
+We prefer to use the github issue tracker instead of RT. So if you want to report a bug, go [there](http://github.com/sukria/dancer/issues).
+
+If your commit fixes a bug reported there, please add in your commit message something like 'fixing GH #xxx" where xxx is the bug id.
+
+Thank you to everyone who have contributed so far!
