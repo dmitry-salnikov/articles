@@ -3,6 +3,8 @@ layout: static
 title: List of articles
 ---
 
+<h1><a href=''>Lumberjaph</a></h1>
+
 <div id='wrapper'>
     <h3>Posts</h3>
 
