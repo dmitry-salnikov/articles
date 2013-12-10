@@ -4,7 +4,7 @@ summary: In which I path xmobar for Debian SID
 title: xmobar on debian SID
 ---
 
-If you are using [xmonad](http://www.xmonad.org/) and [xmobar](http://code.haskell.org/~arossato/xmobar/) on [Debian SID](http://www.debian.org/) on a laptop, and don't see any battery information, you may have test this [solution](http://5e6n1.wordpress.com/2009/03/30/xmobar-battery-plugin-using-sysfs-not-procfs/).
+If you are using [xmonad](http://www.xmonad.org/) and [xmobar](http://projects.haskell.org/xmobar/) on [Debian SID](http://www.debian.org/) on a laptop, and don't see any battery information, you may have test this [solution](http://5e6n1.wordpress.com/2009/03/30/xmobar-battery-plugin-using-sysfs-not-procfs/).
 
 If this didn't solve your problem, try this patch on SysfsBatt.hs :
 
