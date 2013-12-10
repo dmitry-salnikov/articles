@@ -3,6 +3,8 @@ layout: static
 title: Résumé
 ---
 
+<h1>Résumé</h1>
+
 <div id='resume'>
 
     <div style='text-align: center;'>
@@ -10,24 +12,15 @@ title: Résumé
         <address>franckcuny<span style='display: none;'>¡no spam thank you!</span>@gmail.com</address>
     </div>
 
-    <div>
-        <a name='skills'></a><h3>Skills</h3>
-        <dl>
-            <dt>Languages</dt>
-            <dd>Proficient in Perl. Experience with Python, Shell. Interested in Clojure, Scheme (racket). </dd>
-
-            <dt>Tools</dt>
-            <dd>Used, deployed or managed Emacs, Git, Jenkins, Carbon, Graphite.</dd>
-        </dl>
+    <div id='interests'>
+        <h3>Interests</h3>
+        My interests are in <strong>Functional Programming</strong> and <strong>Operations</strong>.
     </div>
 
     <div id='contributions'>
         <a name='contributions'></a><h3>Free Software Contributions</h3>
-        I've contributed to <a hrefp="http://perldancer.org">Dancer</a>, a web framework in Perl. I also maintain and contribute to several CPAN modules.
-
-        I've created SPORE.
-
-        <p style='clear: both'><a href='/projects'>Details</a></p>
+        I've contributed to <a hrefp="http://perldancer.org">Dancer</a>, a web framework in Perl. I also maintain and contribute to several CPAN modules and some Python modules.
+        <p style='clear: both'>You can find more about my Open Source work and contributions <a href='/projects'>over there</a>.</p>
     </div>
 
     <div>
