@@ -6,26 +6,26 @@ layout: default
 
 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
 
-{% if post.previous.url %} 
+{% if post.previous.url %}
     <p id="bigleft"><a href="{{post.previous.url}}">&laquo;</a></p><br />
-{% endif %} 
-{% if post.next.url %} 
-    <p id="bigright"><a href="{{post.next.url}}">&raquo;</a></p> 
-{% endif %} 
+{% endif %}
+{% if post.next.url %}
+    <p id="bigright"><a href="{{post.next.url}}">&raquo;</a></p>
+{% endif %}
 
 <div id="entry">
   {{ post.content }}
 
   <p class="timestamp">
-    {% if post.previous.url %} 
+    {% if post.previous.url %}
       <a href="{{post.previous.url}}">&laquo; {{post.previous.title}}</a> |
     {% endif %}
 
     {{ post.date | date_to_string }}
 
-    {% if post.next.url %} 
-      | <a href="{{post.next.url}}">{{post.next.title}} &raquo;</a> 
-    {% endif %} 
+    {% if post.next.url %}
+      | <a href="{{post.next.url}}">{{post.next.title}} &raquo;</a>
+    {% endif %}
   </p>
 
 </div>
