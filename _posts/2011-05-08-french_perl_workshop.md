@@ -6,7 +6,7 @@ summary: In which I remind you of the French Perl Worksphop.
 
 The call for paper for the [French Perl Workshop](http://journeesperl.fr/fpw2011/) is open. This event will be held the 24th and 25th of June in Paris. As always, this is a free conference.
 
-<img align="left" src="/images/affiche_fpw11.jpg" />
+<img align="left" src="/static/imgs/affiche_fpw11.jpg" />
 
 ## Where
 

@@ -4,9 +4,9 @@ summary: In which we see that it's easy to create REST interface with Dancer.
 title: Easily create REST interface with the Dancer 1.170
 ---
 
-This week, with [Alexi](http://www.sukria.net/fr/)'s help, [I've been working on](http://github.com/sukria/Dancer) to add auto-(de)serialization to Dancer's request. This features will be available in the next [Dancer](http://perldancer.org/) version, the 1.170 (which will be out before April).
+This week, with [Alexi](http://www.sukria.net/fr/)'s help, [I've been working on](http://github.com/perldancer/Dancer) to add auto-(de)serialization to Dancer's request. This features will be available in the next [Dancer](http://perldancer.org/) version, the 1.170 (which will be out before April).
 
-The basic idea was to provides to developer a simple way to access data that have been send in a serialized format, and to properly serialize the response.  
+The basic idea was to provides to developer a simple way to access data that have been send in a serialized format, and to properly serialize the response.
 
 At the moment, the supported serializers are :
 

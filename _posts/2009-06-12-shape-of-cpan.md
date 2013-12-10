@@ -6,7 +6,7 @@ title: The shape of the CPAN
 
 My talk at the [FPW](http://conferences.mongueurs.net/fpw2009/) this year is about the shape of the Perl and CPAN community. This talk was prepared by some [$coworkers](http://labs.rtgi.eu/) and me.
 
-!/static/imgs/draft_cpan_prelimsmall.png(map of the Perl community on the web)!
+<img src='/static/imgs/draft_cpan_prelimsmall.png' alt='map of the Perl community on the web' align='right'>
 
 We generated two maps (authors and modules) using the CPANTS' data. For the websites, we crawled a seed generated from the CPAN pages of the previous authors.
 

@@ -6,7 +6,7 @@ title: presque
 
 I've added a few new features to [presque](http://github.com/franckcuny/presque).
 
-[presque](http://lumberjaph.net/presque-a-redis---tatsumaki-based-message-queue.html) is a persistant job queue based on [Redis](http://github.com/antirez/redis) and [Tatsumaki](http://github.com/miyagawa/Tatsumaki).
+[presque](/presque-a-redis-tatsumaki-based-message-queue/) is a persistant job queue based on [Redis](http://github.com/antirez/redis) and [Tatsumaki](http://github.com/miyagawa/Tatsumaki).
 
 A short list of current features implemented:
 

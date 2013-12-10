@@ -44,7 +44,7 @@ my $app = sub {
   });
   return [ 200, [ 'Content-Type' => 'text/html' ], [$content] ];
 };
-        
+
 builder {
   enable "ConsoleLogger";
   $app;
@@ -57,7 +57,7 @@ point your browser to http://localhost:5000, activate the javascript console.
 
 If this works correctly, you should have a smiliar output in your console:
 
-<a href="http://f.lumberjaph.net/blog/misc/plack_chrome.png"><img class="img_center" src="http://f.lumberjaph.net/blog/misc/plack_chrome.png" /></a>
+<img src="/static/imgs/plack_chrome.png" />
 
 ## Dancer
 
@@ -68,7 +68,7 @@ First, you need to install [Dancer::Logger::PSGI](http://search.cpan.org/perldoc
 {% highlight yaml %}
 logger: "PSGI"
 plack_middlewares:
-  - 
+  -
     - ConsoleLogger
 {% endhighlight %}
 

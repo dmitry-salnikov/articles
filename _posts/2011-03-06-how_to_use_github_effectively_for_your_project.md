@@ -10,7 +10,7 @@ summary: In which we look at how we can use GitHub effectively for your project.
 
 ## code review
 
-<a href="https://github.com/sukria/dancer">Dancer</a>'s development goes fast. We do our best to ship often, we do a lot of refactoring, and we listen our users. This means processing pull request and issues as fast as possible.
+<a href="https://github.com/perldancer/dancer">Dancer</a>'s development goes fast. We do our best to ship often, we do a lot of refactoring, and we listen our users. This means processing pull request and issues as fast as possible.
 
 ## pull request
 
@@ -26,7 +26,7 @@ As the work consists to read the code and comment, it's quiete easy to handle tw
 
 We don't use "RT":http://bestpractical.com/rt/ to manage our issues. It's not that RT is bad or that we don't like it, it's just that GitHub's issues are more integrated with our workflow. GitHub's issues are really simple (one can even say naive), but most of the time it's ok for our usage. We don't need advanced features like "track how much time you've spend on this ticket" (even if I do track my time spent on Dancer, using [orgmode](http://orgmode.org/manual/Clocking-commands.html#Clocking-commands)).
 
-One of the nice feature of GitHub's issues, is that you can close them with a commit. If the commit's message looks like 'closes GH-123', the issue 123 will be closed, with a link to the commit in the comment ([take a look](https://github.com/sukria/Dancer/issues/249)). I find this feature really useful, since when refering to a closed issue, you can find the commit inside the ticket.
+One of the nice feature of GitHub's issues, is that you can close them with a commit. If the commit's message looks like 'closes GH-123', the issue 123 will be closed, with a link to the commit in the comment ([take a look](https://github.com/perldancer/Dancer/issues/249)). I find this feature really useful, since when refering to a closed issue, you can find the commit inside the ticket.
 
 Once or twice a week, we try to proceed a **triage**, where we go through the issues, and tag them.
 
@@ -42,11 +42,11 @@ An issue doesn't need to be about a bug, it could be:
 
 Another nice feature is the possibility to comment the code. Most of the time you'll do it while reviewing a pull request. But a user can also comment on something.
 
-Sometimes we push a branch that need some feedback, and "a discussion will be started":https://github.com/sukria/Dancer/commit/d8e79e0d63d0e1b0e05fd36f9e31c378678fccc3.
+Sometimes we push a branch that need some feedback, and "a discussion will be started":https://github.com/perldancer/Dancer/commit/d8e79e0d63d0e1b0e05fd36f9e31c378678fccc3.
 
 ## comparing branches
 
-You can easily diff two branches. With [this url](https://github.com/sukria/Dancer/compare/master...devel) you can do a quick diff of the changes between master and devel, see the list of commits, and which files have changed.
+You can easily diff two branches. With [this url](https://github.com/perldancer/Dancer/compare/master...devel) you can do a quick diff of the changes between master and devel, see the list of commits, and which files have changed.
 
 This is usefull when you want to have an overview of the work.
 

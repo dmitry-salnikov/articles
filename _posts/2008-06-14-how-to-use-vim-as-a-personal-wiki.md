@@ -9,7 +9,7 @@ There is different reasons to want a personal wiki on your machine:
 * privacy
 * having it everywhere
 
-I've tested a few wikis engines, like tiddlywiki, but I've found nothing that was really what I wanted. The main inconveniance is the need to use a webbrowser. A browser is not a text processor, so it's really painfull to use them for writing.
+I've tested a few wikis engines, like [tiddlywiki](http://tiddlywiki.com/), but I've found nothing that was really what I wanted. The main inconveniance is the need to use a webbrowser. A browser is not a text processor, so it's really painfull to use them for writing.
 
 I've started to try to use vim as wiki. Why would I want to use something like vim for this ? well, it's plain text (easy to grep, or to write script for manipulating data), application independent, it's a real text processor, you can customize it, and most importantly, I know how to use it, ...
 
@@ -34,14 +34,12 @@ set softtabstop=2               " Unify
 
 I organize my files in directory. I've got a **work**, **lists**, **recipes**, **misc**, ... and I put my files in this directory.
 
-I've got an index page, with links to main section. I don't have wikiword in camelcase or things like that, so if i want to put a link to a page, I just wrote the link this way **dir_name/page_name**, then, i juste have to hit `gf` on this link to open the page.  I also use this place as a todo list manager. I've got one paragrah per day, like this : 
+I've got an index page, with links to main section. I don't have wikiword in camelcase or things like that, so if i want to put a link to a page, I just wrote the link this way **dir_name/page_name**, then, i juste have to hit `gf` on this link to open the page.  I also use this place as a todo list manager. I've got one paragrah per day, like this :
 
-```
-2008-06-14
- - [@context] task 1
- - [@context] task 2
- ...
-```
+    2008-06-14
+        - [@context] task 1
+        - [@context] task 2
+        ...
 
 and a bunch of vim mapping for marking complete (`,c`), work in progress (`,w`) or canceled (`,x`).
 

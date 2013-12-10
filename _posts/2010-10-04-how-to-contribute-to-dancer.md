@@ -8,7 +8,7 @@ For our development projects, we rely a lot on Github. Lately, more and more peo
 
 ## the code
 
-The main repository is hosted [here](http://github.com/sukria/dancer). There are two main branches:
+The main repository is hosted [here](http://github.com/perldancer/dancer). There are two main branches:
 
 * master
 * devel
@@ -19,7 +19,7 @@ The devel branch is where we add new features, or improve existing features.
 
 ## contributing
 
-First, go to [github.com/sukria/dancer](http://github.com/sukria/dancer) and click on the "fork" button. Now, here is a little tutorial on how to fetch the repository, list the local and remote branches, and track the remote devel branch.
+First, go to [github.com/perldancer/dancer](http://github.com/perldancer/dancer) and click on the "fork" button. Now, here is a little tutorial on how to fetch the repository, list the local and remote branches, and track the remote devel branch.
 
 Now that you know what the purpose of each branch is, you can decide to work on master or devel (`git checkout devel` to switch branch).
 
@@ -27,11 +27,11 @@ Now that you know what the purpose of each branch is, you can decide to work on 
 
 As I've previously stated, we rely a lot on the github features and interface. So now you've written your patch. First, be sure to provide one or more tests, and to run the test suite (with `make test` or `prove -r t/`). If all the tests pass, you can send a pull request. For this, you go on your own fork on github (http://github.com/$user/dancer), and you click on the "Pull Request" button.
 
-You can at any time see all the commits done by others that have not yet been merged into one of our branches at [this url](http://github.com/sukria/Dancer/forkqueue).
+You can at any time see all the commits done by others that have not yet been merged into one of our branches at [this url](http://github.com/perldancer/Dancer/forkqueue).
 
 ## reporting and/or fixing bugs
 
-We prefer to use the github issue tracker instead of RT. So if you want to report a bug, go [there](http://github.com/sukria/dancer/issues).
+We prefer to use the github issue tracker instead of RT. So if you want to report a bug, go [there](http://github.com/perldancer/dancer/issues).
 
 If your commit fixes a bug reported there, please add in your commit message something like 'fixing GH #xxx" where xxx is the bug id.
 

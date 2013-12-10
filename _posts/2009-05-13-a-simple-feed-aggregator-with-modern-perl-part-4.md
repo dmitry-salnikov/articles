@@ -141,13 +141,9 @@ We create our 2 templates (for index and view):
 </ul>
 {% endhighlight %}
 
-If you point your browser to
+If you point your browser to http://localhost:3000/feed/ you will see this:
 
-bc. http://localhost:3000/feed/
-
-you will see this:
-
-!/static/imgs/list_feed.png(list feeds)!
+<img src='/static/imgs/list_feed.png' alt='list feeds'>
 
 Now the controller for displaying the entries:
 
@@ -182,7 +178,7 @@ The function **view** fetch an entry from the kiokudb backend, and store it in t
 
 If you point your browser to an entry (something like **http://localhost:3000/entry/somesha256value**), you will see an entry:
 
-!/static/imgs/show_entry.png(show entry)!
+<img src='/static/imgs/show_entry.png' alt='show entry'>
 
 Et voila, we are done with a really basic feed reader. You can add methods to add or delete feed, mark an entry as read, ...
 

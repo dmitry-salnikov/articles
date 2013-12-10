@@ -4,9 +4,9 @@ title: CatalystX::Dispatcher::AsGraph
 summary: In which I wrote a module to visualize routes in Catalyst.
 ---
 
-This morning I saw [this post](http://marcus.nordaaker.com/2009/05/awesome-route-graph-with-mojoxroutesasgraph/) from Marcus Ramberg about [MojoX::Routes::AsGraph](http://search.cpan.org/perldoc?MojoX::Routes::AsGraph). I liked the idea. But as I Catalyst instead of Mojo, I thought I could give a try and do the same thing for Catalyst dispatcher, and I've coded CatalystX::Dispatcher::AsGraph. For the moment only private actions are graphed.
+This morning I saw [this post](http://marcus.nordaaker.com/awesome-route-graph-with-mojoxroutesasgraph/) from Marcus Ramberg about [MojoX::Routes::AsGraph](http://search.cpan.org/perldoc?MojoX::Routes::AsGraph). I liked the idea. But as I Catalyst instead of Mojo, I thought I could give a try and do the same thing for Catalyst dispatcher, and I've coded CatalystX::Dispatcher::AsGraph. For the moment only private actions are graphed.
 
-!/static/imgs/routes-300x249.png(routes)!
+<img src='/static/imgs/routes-300x249.png' alt='routes'>
 
 You use it like this: `perl bin/catalyst_graph_dispatcher.pl --appname Arkham --output routes.png`
 
@@ -22,6 +22,6 @@ $graph->run;
 print $graph->graph->as_txt;
 {% endhighlight %}
 
-The code is on [GitHub](http://github.com/franckcuny/CatalystX--Dispatcher--AsGraph/tree/master) for the moment.
+The code is on [Bitbucket](https://bitbucket.org/franckcuny/catalystx-dispatcher-asgraph) for the moment.
 
 For thoses who are interested by visualization, I'll publish soon some (at least I think) really nice visualisations about CPAN, Perl, and his community, that we have created at [$work](http://rtgi.fr).

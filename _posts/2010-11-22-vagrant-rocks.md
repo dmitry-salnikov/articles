@@ -8,7 +8,7 @@ summary: In which I share my enthusiasm for Vagrant
 
 I've been toying with [vagrant](http://vagrantup.com/) lately, and it **really rocks**. You should definitly give it a try. If you're only looking for some resources to get started with it, go there:
 
- * [introduction](http://vagrantup.com/docs/index.html)
+ * [introduction](http://docs.vagrantup.com/v2/why-vagrant/index.html)
  * [google group](http://groups.google.com/group/vagrant-up)
 
 ## What is Vagrant
@@ -23,7 +23,7 @@ I won't go into the details to describe Chef and VirtualBox, but here is a quick
 
 ## The basic
 
-To install vagrant, you'll need ruby and virtualbox. You have the basic instructions detailed [here](http://vagrantup.com/docs/getting-started/index.html). This will explain how to install vagrant and how to fetch a **base** image.
+To install vagrant, you'll need ruby and virtualbox. You have the basic instructions detailed [here](http://docs.vagrantup.com/v2/getting-started/index.html). This will explain how to install vagrant and how to fetch a **base** image.
 
 ### Creating a first project
 
@@ -49,12 +49,12 @@ end
 These instructions will:
 
  * tell vagrant to use the image named **base** (a lucid32 image by default)
- * use chef in **solo** mode 
+ * use chef in **solo** mode
  * the recipes will be in a directory named **cookbooks**
  * the main recipe will be named **vagrant_main**
  * forward local HTTP port 4000 to 5000 on the VM
 
-### My recipes 
+### My recipes
 
 Now we need to create or use some recipes. First we create our **cookbooks** directory:
 

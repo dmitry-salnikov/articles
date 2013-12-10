@@ -1,7 +1,7 @@
 ---
 layout: post
 summary: In which I went to the Belgian Perl Workshop.
-title: belgian perl workshop 09
+title: Belgian Perl Workshop 09
 ---
 
 last weekend my co-workers and I went to the [Belgian Perl Workshop 09](http://conferences.mongueurs.net/bpw2009/). I attended the following presentations:

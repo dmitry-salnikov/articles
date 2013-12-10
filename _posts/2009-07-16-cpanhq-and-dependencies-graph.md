@@ -8,7 +8,7 @@ CPANHQ is a new project that "aims to be a community-driven, meta-data-enhanced 
 
 I believe that a good vizualisation can help to have a better understanding of datas. One of the missing thing on the actual search.cpan.org is the lack of informations about a distribution's dependencies. So my first contribution to the CPANHQ project was to add such informations.
 
-!/static/imgs/cpanhq-dep.png(cpanhq deps)!
+<img src='/static/imgs/cpanhq-dep.png' alt='cpanhq deps' align=left'>
 
 For each distributions, a graph is generated for the this distribution. For this, I use [Graph::Easy](http://search.cpan.org/perldoc?Graph::Easy) and data available from the CPANHQ database. I alsa include a simple list of the dependencies after the graph.
 

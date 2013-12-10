@@ -8,7 +8,7 @@ summary: In which we continue to write a feed aggregator in Perl.
 
 For the feed aggregator, I will use **Moose**, **KiokuDB** and our **DBIx::Class** schema. Before we get started, I'd would like to give a short introduction to Moose and KiokuDB.
 
-Moose is a "A postmodern object system for Perl 5".  Moose brings to OO Perl some really nice concepts like roles, a better syntax, "free" constructor and destructor, ... If you don't already know Moose, check "http://www.iinteractive.com/moose/":http://www.iinteractive.com/moose/ for more informations.
+Moose is a "A postmodern object system for Perl 5".  Moose brings to OO Perl some really nice concepts like roles, a better syntax, "free" constructor and destructor, ... If you don't already know Moose, check [it here](http://www.iinteractive.com/moose/) for more information.
 
 KiokuDB is a Moose based frontend to various data stores [...] Its purpose is to provide persistence for "regular" objects with as little effort as possible, without sacrificing control over how persistence is actually done, especially for harder to serialize objects. [...] KiokuDB is meant to solve two related persistence problems:
 

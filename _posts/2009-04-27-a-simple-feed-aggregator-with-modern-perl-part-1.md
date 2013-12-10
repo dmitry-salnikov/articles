@@ -4,14 +4,14 @@ summary: In which I write a feed aggregator in Perl.
 layout: post
 ---
 
-Following [Matt's post](http://www.shadowcat.co.uk/blog/matt-s-trout/iron-man/) about people not blogging enough about Perl, I've decided to try to post once a week about Perl. So I will start by a series of articles about what we call **modern Perl**. For this, I will write a simple feed agregator (using [Moose](http://search.cpan.org/~drolsky/Moose-0.75/lib/Moose.pm), [DBIx::Class](http://search.cpan.org/perldoc?DBIx::Class), [KiokuDB](http://search.cpan.org/perldoc?KiokuDB), some tests, and a basic frontend (with [Catalyst](http://search.cpan.org/perldoc?Catalyst)). This article will be split in four parts:
+Following [Matt's post](http://www.shadowcat.co.uk/blog/matt-s-trout/iron-man/) about people not blogging enough about Perl, I've decided to try to post once a week about Perl. So I will start by a series of articles about what we call **modern Perl**. For this, I will write a simple feed agregator (using [Moose](https://metacpan.org/pod/Moose), [DBIx::Class](http://search.cpan.org/perldoc?DBIx::Class), [KiokuDB](http://search.cpan.org/perldoc?KiokuDB), some tests, and a basic frontend (with [Catalyst](http://search.cpan.org/perldoc?Catalyst)). This article will be split in four parts:
 
  * the first one will explain how to create a schema using **DBIx::Class**
  * the second will be about the aggregator. I will use **Moose*** and **KiokuDB**
  * the third one will be about writing tests with **Test::Class**
  * the last one will focus on **Catalyst**
 
-The code of these modules will be available on my github account at the same time each article is published.
+The code of these modules will be available on [my Bitbucket account](https://bitbucket.org/franckcuny/) at the same time each article is published.
 
 > I'm not showing you how to write the perfect feed aggregator.  The purpose of this series of articles is only to show you how to write a simple aggregator using modern Perl.
 
@@ -130,14 +130,8 @@ sub usage {
 
 This script will deploy for you the schema (you need to create the database first if using with mysql).
 
-Executing the following command:
+Executing the following command `perl bin/deploy_mymodel.pl --dsn dbi:SQLite:model.db` will generate a **model.db** database so we can work and test it. Now that we got our (really) simple **MyModel** schema, we can start to hack on our aggregator.
 
-{% highlight bash %}
-% perl bin/deploy_mymodel.pl --dsn dbi:SQLite:model.db
-{% endhighlight %}
-
-generate a **model.db** database so we can work and test it. Now that we got our (really) simple **MyModel** schema, we can start to hack on our aggregator.
-
-[link to the code](http://github.com/franckcuny/ironman-mymodel/tree/master)
+[The code is available on Bitbucket](https://bitbucket.org/franckcuny/ironman-mymodel/overview).
 
 > while using **DBIx::Class**, you may want to take a look at the generated queries. For this, export `DBIC_TRACE=1` in your environment, and the queries will be printed on STDERR.

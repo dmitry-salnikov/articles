@@ -4,7 +4,7 @@ summary: In which I share my experience with Graphite
 title: Let's talk about Graphite
 ---
 
-As I've already mentionned in a [previous post](http://lumberjaph.net/devops/2013/01/10/carbons-manhole.html), at [$work](http://saymedia.com) we are currently deploying Graphite and the usual suspects.
+As I've already mentionned in a [previous post](/carbons-manhole/), at [$work](http://saymedia.com) we are currently deploying Graphite and the usual suspects.
 
 Finding articles on how to install all these tools is easy, there's plenty of them.  But what's *really* hard to find, are stories on *how to use them*: what's collected, how, why, how do you organize your metrics, do you rewrite them, etc.
 
@@ -97,6 +97,6 @@ We have some other complains about Graphite.  Even after reading the [rationals]
 
 ## Meetup
 
-We've a huge basement at work that can be used to host meetup.  There's already a few meetup in the San Francisco about "devops" stuff ([Metrics Meetup](http://www.meetup.com/San-Francisco-Metrics-Meetup/events/98875712/), [SF DevOps](http://www.meetup.com/San-Francisco-DevOps/), etc), but maybe there's room for another one with a different format.  
+We've a huge basement at work that can be used to host meetup.  There's already a few meetup in the San Francisco about "devops" stuff ([Metrics Meetup](http://www.meetup.com/San-Francisco-Metrics-Meetup/events/98875712/), [SF DevOps](http://www.meetup.com/San-Francisco-DevOps/), etc), but maybe there's room for another one with a different format.
 
 What I would like, is a kind of forum, where a topic is picked, and people share their *experiences* (the bad, the good and the ugly), not how to configure or deploy something.  And there's a lot of topics where I've questions: deployment (this will be the topic of my next entry I think), monitoring, alerting, post-mortem, etc.  If you're interested, send me an email, or drop a comment on this post.

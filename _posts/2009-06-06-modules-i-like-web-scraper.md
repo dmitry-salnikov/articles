@@ -1,7 +1,7 @@
 ---
 layout: post
-summary: In which I talk about Web::Scraper
-title: modules I like Web::Scraper
+summary: In which I talk about Web::Scraper.
+title: Modules I like Web::Scraper
 ---
 
 For [$work](http://rtgi.fr) I need to write scrapers. It used to be boring and painful. But thanks to [miyagawa](http://search.cpan.org/~miyagawa/), this is not true anymore. [Web::Scraper](http://search.cpan.org/perldoc?Web::Scraper) offer a nice API: you can write your rules using XPath, you can chaine rules, a nice and simple syntax, etc.

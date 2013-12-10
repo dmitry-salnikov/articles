@@ -22,4 +22,4 @@ then install Perl 5.10:
 % /opt/perl/bin/perl -e 'use feature qw(say); say "hi"'
 {% endhighlight %}
 
-and then re-install your modules with `cpan \`cat module.list\``.
+and then re-install your modules with <code>cpan \`cat module.list\`</code>.

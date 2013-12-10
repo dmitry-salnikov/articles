@@ -138,19 +138,19 @@ We got `feed` which is chained to root. `index` is chained to feed, and take no 
 If you start the application, you will see the following routes:
 
 
->    .-------------------------------------+--------------------------------------.
->    | Path Spec                           | Private                              |
->    +-------------------------------------+--------------------------------------+
->    | /root/entry/*                       | /root (0)                            |
->    |                                     | => /entry/view                       |
->    | /root/feed                          | /root (0)                            |
->    |                                     | -> /feed/feed (0)                    |
->    |                                     | => /feed/index                       |
->    | /root/feed/view/*                   | /root (0)                            |
->    |                                     | -> /feed/feed (0)                    |
->    |                                     | => /feed/view                        |
->    | /root                               | /root (0)                            |
->    |                                     | => /index                            |
->    '-------------------------------------+--------------------------------------'
+    .-------------------------------------+--------------------------------------.
+    | Path Spec                           | Private                              |
+    +-------------------------------------+--------------------------------------+
+    | /root/entry/*                       | /root (0)                            |
+    |                                     | => /entry/view                       |
+    | /root/feed                          | /root (0)                            |
+    |                                     | -> /feed/feed (0)                    |
+    |                                     | => /feed/index                       |
+    | /root/feed/view/*                   | /root (0)                            |
+    |                                     | -> /feed/feed (0)                    |
+    |                                     | => /feed/view                        |
+    | /root                               | /root (0)                            |
+    |                                     | => /index                            |
+    '-------------------------------------+--------------------------------------'
 
 I hope you got a better idea about chained action in catalyst now. And again, thanks to bobtfish for the code.
