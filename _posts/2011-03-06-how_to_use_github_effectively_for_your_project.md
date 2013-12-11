@@ -24,7 +24,7 @@ As the work consists to read the code and comment, it's quiete easy to handle tw
 
 ## issues
 
-We don't use "RT":http://bestpractical.com/rt/ to manage our issues. It's not that RT is bad or that we don't like it, it's just that GitHub's issues are more integrated with our workflow. GitHub's issues are really simple (one can even say naive), but most of the time it's ok for our usage. We don't need advanced features like "track how much time you've spend on this ticket" (even if I do track my time spent on Dancer, using [orgmode](http://orgmode.org/manual/Clocking-commands.html#Clocking-commands)).
+We don't use [RT](http://bestpractical.com/rt/) to manage our issues. It's not that RT is bad or that we don't like it, it's just that GitHub's issues are more integrated with our workflow. GitHub's issues are really simple (one can even say naive), but most of the time it's ok for our usage. We don't need advanced features like "track how much time you've spend on this ticket" (even if I do track my time spent on Dancer, using [orgmode](http://orgmode.org/manual/Clocking-commands.html#Clocking-commands)).
 
 One of the nice feature of GitHub's issues, is that you can close them with a commit. If the commit's message looks like 'closes GH-123', the issue 123 will be closed, with a link to the commit in the comment ([take a look](https://github.com/perldancer/Dancer/issues/249)). I find this feature really useful, since when refering to a closed issue, you can find the commit inside the ticket.
 
@@ -42,7 +42,7 @@ An issue doesn't need to be about a bug, it could be:
 
 Another nice feature is the possibility to comment the code. Most of the time you'll do it while reviewing a pull request. But a user can also comment on something.
 
-Sometimes we push a branch that need some feedback, and "a discussion will be started":https://github.com/perldancer/Dancer/commit/d8e79e0d63d0e1b0e05fd36f9e31c378678fccc3.
+Sometimes we push a branch that need some feedback, and [a discussion will be started](https://github.com/perldancer/Dancer/commit/d8e79e0d63d0e1b0e05fd36f9e31c378678fccc3).
 
 ## comparing branches
 
@@ -58,11 +58,11 @@ Ok, this has nothing to do with GitHub, but I'll explain quickly what we do with
 
 We use the following conventions:
 
-* master: only for release
-* devel: this is the development branch. This one should *always* work (tests can't be broken)
-* topic/$name: when we start to develop a new feature, we create a topic branch
-* hotfix/$name: when we need to release a new version right now, without merging devel before, we create a hofrix branch
-* release/$version: when we're ready to ship, we create a new branch
+* **master**: only for release
+* **devel**: this is the development branch. This one should *always* work (tests can't be broken)
+* **topic/$name**: when we start to develop a new feature, we create a topic branch
+* **hotfix/$name**: when we need to release a new version right now, without merging devel before, we create a hofrix branch
+* **release/$version**: when we're ready to ship, we create a new branch
 
 It's very rare that we need to push a hotfix or release branch to GitHub: thoses branches had a really short life span. But **topic** branches can be pushed, when we want feedback from users or other developers.
 
