@@ -182,4 +182,4 @@ If you point your browser to an entry (something like **http://localhost:3000/en
 
 Et voila, we are done with a really basic feed reader. You can add methods to add or delete feed, mark an entry as read, ...
 
-[The code is available on GitHub](http://github.com/franckcuny/ironman-myfeedreader/tree/master)
+[The code is available on Bitbucket](https://bitbucket.org/franckcuny/ironman-myfeedreader).

@@ -13,7 +13,7 @@ We have two things to test:
 
 ### Roles
 
-For this, we create the following files: 
+For this, we create the following files:
 
  * t/tests/Test/TestObject.pm
  * t/tests/Test/MyRoles.pm
@@ -256,4 +256,4 @@ Files=1, Tests=9,  3 wallclock secs ( 0.01 usr  0.01 sys +  1.39 cusr  0.12 csys
 Result: PASS
 {% endhighlight %}
 
-We have our tests, so next step is the Catalyst frontend. As for the precedents parts, [the code is available on GitHub](http://github.com/franckcuny/ironman-myaggregator/tree/master)
+We have our tests, so next step is the Catalyst frontend. As for the precedents parts, [the code is available on Bitbucket](https://bitbucket.org/franckcuny/ironman-myaggregator).

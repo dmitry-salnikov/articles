@@ -246,6 +246,6 @@ And it's done :) We got a really basic aggregator now. If you want to improve th
 
 big thanks to [tea](http://bunniesincyberspace.wordpress.com/) and [blob](http://code.google.com/p/tinyaml/) for reviewing and fixing my broken english in the first 2 parts.
 
-[The code is available on GitHub](http://github.com/franckcuny/ironman-myaggregator/tree/master)
+[The code is available on Bitbucket](https://bitbucket.org/franckcuny/ironman-myaggregator).
 
 Part 3 and 4 next week.
