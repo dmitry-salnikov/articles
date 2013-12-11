@@ -121,16 +121,16 @@ kbd {
   padding: 0.2em;
 }
 
-.code, .highlight {
+.highlight {
   border: 1px grey solid;
   padding-left: 0.5em;
   font-family: Inconsolata, Consolas, monospace;
-  font-size: 14px;
   border-radius: 4px 4px 4px 4px;
 }
 
-code {
+p code {
   font-family: Inconsolata, Consolas, monospace;
+  background-color: #eee;
 }
 
 .timestamp {
