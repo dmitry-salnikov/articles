@@ -20,13 +20,13 @@ title: Résumé
     <div id='contributions'>
         <a name='contributions'></a><h3>Free Software Contributions</h3>
         I've contributed to <a hrefp="http://perldancer.org">Dancer</a>, a web framework in Perl. I also maintain and contribute to several CPAN modules and some Python modules.
-        <p style='clear: both'>You can find more about my Open Source work and contributions <a href='/projects'>over there</a>.</p>
+        <p style='clear: both'>You can find more about my Open Source work and contributions <a href='/projects.html'>over there</a>.</p>
     </div>
 
     <div>
         <a name='work'></a><h3>Work Experience</h3>
         <p><a href='http://saymedia.com'>Say Media</a>, San Francisco, CA [August 2011 - present]</p>
-        From August 2011 to December 2012 I was part of the platform team. Tasks included designing the internal APIs.
+        From August 2011 to December 2012 I was part of the platform team. Tasks included designing the internal APIs.<br />
 
         Starting December 2012 I joined a newly created team to improve developers efficiency by writing tools and providing a better infrastructure. Projects included setting up better monitoring with Graphite.
 
