@@ -14,7 +14,9 @@ title: Résumé
 
     <div id='interests'>
         <h3>Interests</h3>
-        My interests are in <strong>Functional Programming</strong> and <strong>Operations</strong>.
+
+        <p style='clear: both'>My interests are in <strong>Functional Programming</strong> and <strong>Operations</strong>.<br />My favorite tools include <a href='http://www.gnu.org/software/emacs/'>Emacs</a>, <a href='http://git-scm.com/'>Git</a>, <a href='http://www.ansibleworks.com/'>Ansible</a>, <a href='http://clojure.org/'>Clojure</a> and <a href='http://www.perl.org/'>Perl</a>.</p>
+
     </div>
 
     <div id='contributions'>
