@@ -4,7 +4,7 @@ summary: In which I write an update about MooseX::Net::API
 title: Moosex::Net::API - update
 ---
 
-[MooseX::Net::API](http://github.com/franckcuny/moosex-net-api) is a module to help writing clients for RESTful (and even non-RESTful) WebServices:
+[MooseX::Net::API](http://git.lumberjaph.net/p5-moosex-net-api.git/) is a module to help writing clients for RESTful (and even non-RESTful) WebServices:
 
 {% highlight perl %}
 package my::api;
@@ -61,7 +61,7 @@ It's not yet complete, but a new version will be available soon on CPAN. Here is
 
 ## http-console
 
-I've also started [Net::HTTP::Console](http://github.com/franckcuny/net-http-console). It's inspired by [http-console](http://github.com/cloudhead/http-console). It relies on MX::Net::API, and can use any libraries written with MX::Net::API, as well as any **raw** RESTful API. As an example, let's use it on twitter.
+I've also started [Net::HTTP::Console](http://git.lumberjaph.net/p5-net-http-console.git/). It's inspired by [http-console](http://github.com/cloudhead/http-console). It relies on MX::Net::API, and can use any libraries written with MX::Net::API, as well as any **raw** RESTful API. As an example, let's use it on twitter.
 
 {% highlight bash %}
 % http-console --url http://api.twitter.com --format json

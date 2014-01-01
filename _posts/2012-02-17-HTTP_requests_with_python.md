@@ -28,7 +28,7 @@ There is also an important issue with httplib2 that we discovered at work. In so
 
 [urllib](http://docs.python.org/library/urllib.html) is also part of the standard library. I was suprised, because given the name, I was expecting a lib to *manipulate* an URL. And indeed, it also does that! This library mix too many different things.
 
-### urllib2 
+### urllib2
 
 [urllib2](http://docs.python.org/library/urllib2.html) And because 2 is not enough, also ...
 
@@ -66,9 +66,9 @@ The response and request objects use HTTP::Headers and HTTP::Cookies. This way, 
 
 ## http
 
-So now you start seeing where I'm going. And you're saying "ho no, don't tell me you're writing *another* HTTP library". Hell yeah, I am (sorry, Masa).  But to be honest, I doubt you'll ever use it. It's doing the job *I* want, the way *I* want. And it's probably not what you're expecting. 
+So now you start seeing where I'm going. And you're saying "ho no, don't tell me you're writing *another* HTTP library". Hell yeah, I am (sorry, Masa).  But to be honest, I doubt you'll ever use it. It's doing the job *I* want, the way *I* want. And it's probably not what you're expecting.
 
-[http](https://github.com/franckcuny/httpclient/) is providing an abstraction for the following things:
+[http](http://git.lumberjaph.net/py-http.git/) is providing an abstraction for the following things:
 
 * http.headers
 * http.request
@@ -94,8 +94,8 @@ http://lumberjaph.net
 >>> r.headers.add('Content-Type', 'application/json')
 >>> print r.headers
 Content-Type: application/json
- 
- 
+
+
 >>>
 {% endhighlight %}
 
@@ -103,19 +103,19 @@ Content-Type: application/json
 >>> from http import Headers
 >>> h = Headers()
 >>> print h
- 
- 
+
+
 >>> h.add('X-Foo', 'bar')
 >>> h.add('X-Bar', 'baz', 'foobarbaz')
 >>> print h
 X-Foo: bar
 X-Bar: baz
 X-Bar: foobarbaz
- 
- 
+
+
 >>> for h in h.items():
 ...     print h
-... 
+...
 ('X-Foo', 'bar')
 ('X-Bar', 'baz')
 ('X-Bar', 'foobarbaz')
@@ -126,6 +126,6 @@ X-Bar: foobarbaz
 
 With this, you can easily build a very simple client combining thoses classes, or a more complex one. Or maybe you want to build a web framework, or a framework to test HTTP stuff, and you need a class to manipulate HTTP headers. Then you can use http.headers. The same if you need to create some HTTP responses: http.response.
 
-I've started to write [httpclient](https://github.com/franckcuny/httpclient/) based on this library that will mimic LWP's API.
+I've started to write [httpclient](http://git.lumberjaph.net/py-httpclient.git/) based on this library that will mimic LWP's API.
 
 I've started [to document this library](http://httpclient.readthedocs.org/en/latest/index.html) and I hope to put something on PyPI soon.

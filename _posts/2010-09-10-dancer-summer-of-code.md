@@ -62,7 +62,7 @@ Now you can request **/** and **/forum**. The before filter declared in the pack
 
 ### QA
 
-The weekend following the YAPC::EU, we held a small hackaton/QA day on irc.  Not many people were present, but we managed to achieve some results: 
+The weekend following the YAPC::EU, we held a small hackaton/QA day on irc.  Not many people were present, but we managed to achieve some results:
 
  * reached the 1K tests
  * documentation cleanup
@@ -71,7 +71,7 @@ The weekend following the YAPC::EU, we held a small hackaton/QA day on irc.  Not
 
 Today our code average is over 92%, and we have more than 1200 tests.
 
-With the new hook system, two new keywords have been added: **before_template** and **after**. They work as the **before** keyword, except the **before_template** is executed before sending the tokens to the template, so you can modify them (a small example can be found in the [Dancer::Plugin::i18n](http://github.com/franckcuny/dancer-plugin-i18n)). The **after** is executed before the response is sent to the user.
+With the new hook system, two new keywords have been added: **before_template** and **after**. They work as the **before** keyword, except the **before_template** is executed before sending the tokens to the template, so you can modify them (a small example can be found in the [Dancer::Plugin::i18n](http://git.lumberjaph.net/p5-dancer-plugin-18n.git/)). The **after** is executed before the response is sent to the user.
 
 Sukria has also set up an autobuild system for our two main branches. Every 15 minutes, the test suite is executed when there is a new commit, and builds a report. Code coverage is also measured, so we can always know the state of our various development cycles.
 
@@ -87,7 +87,7 @@ We investigated various ways to do this:
 
 I didn't want to write a websocket implementation for Dancer, as the spec are not yet final and it's not easy to do. Thanks to [clkao](http://github.com/clkao), we didn't have to care about all this, as he already wrote a Plack middleware for this: [Web::Hippie](http://search.cpan.org/perldoc?Web::Hippie::Pipe).
 
-So, what we did, is to use this middleware and add some syntactic sugar so people can use it easily in their applications. A small application is available [here](http://github.com/franckcuny/dancer-chat).
+So, what we did, is to use this middleware and add some syntactic sugar so people can use it easily in their applications. A small application is available [here](http://git.lumberjaph.net/p5-dancer-chat.git/).
 
 This is not yet complete, it's only available in the 'devel' branch, and subject to change. A small code sample:
 

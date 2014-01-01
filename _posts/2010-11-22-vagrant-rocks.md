@@ -84,7 +84,7 @@ require_recipe "runit"
 
 If the VM is already started, you can run `vagrant provision` or `vagrant up`. This will deploy the previous cookbooks on the VM. When it's done, you can log on the VM with `vagrant ssh`.
 
-You'll need to additional recipes: one for redis; one for presque. You'll find them on my [GitHub account](http://github.com/franckcuny/cookbooks/). Copy the two recipes inside your cookbook directory, and execute `vagrant provision` to install them.
+You'll need to additional recipes: one for redis; one for presque. You'll find them on my [GitHub account](http://git.lumberjaph.net/chef-cookbooks.git/). Copy the two recipes inside your cookbook directory, and execute `vagrant provision` to install them.
 
 If everything works fine, you should be able to start using presque. Test this:
 

@@ -31,7 +31,7 @@ serializer: "JSON"
 
 ## A simple handler
 
-Let's create a new dancer application (you can fetch the source on [GitHub](http://github.com/franckcuny/dancerREST) :
+Let's create a new dancer application (you can fetch the source on [my git server](http://git.lumberjaph.net/p5-dancer-rest.git/) :
 
 {% highlight bash %}
 % dancer -a dancerREST

@@ -25,14 +25,14 @@ Out of the box, Dancer only has a simple logging system to write to file, but mo
 <ul>
 <li><a href="http://search.cpan.org/perldoc?Dancer::Logger::Syslog">Dancer::Logger::Syslog</a> by sukria</li>
 <li><a href="http://search.cpan.org/perldoc?Dancer::Logger::LogHandler">Dancer::Logger::LogHandler</a> by me</li>
-<li><a href="http://github.com/franckcuny/Dancer-Logger-PSGI">Dancer::Logger::PSGI</a> by me</li>
+<li><a href="http://git.lumberjaph.net/p5-dancer-logger-psgi.git/">Dancer::Logger::PSGI</a> by me</li>
 </ul>
 
 The last one is for writing directly your log message via <ah href="http://search.cpan.org/perldoc?Plack">Plack</a>. You can use a middleware like <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/LogDispatch.pm">P::M::LogDispatch</a> or <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/Log4perl.pm">P::M::Log4perl</a> to handle logs for your application. Even better, if you use <a href="http://github.com/miyagawa/Plack-Middleware-ConsoleLogger">P::M::ConsoleLogger</a>, you can have logs from your Dancer application in your javascript console.
 
 ## Debug
 
-To debug your application with Plack, you can use the awesome <a href="http://search.cpan.org/perldoc?Plack::Middleware::Debug">Plack::Middleware::Debug</a>. I've writen <a href="http://github.com/franckcuny/dancer-debug">Dancer::Debug</a> (which requires my fork of <a href="http://github.com/franckcuny/Plack-Middleware-Debug">P::M::Debug</a>), a middleware that add panels, with specific informations for Dancer applications.
+To debug your application with Plack, you can use the awesome <a href="http://search.cpan.org/perldoc?Plack::Middleware::Debug">Plack::Middleware::Debug</a>. I've writen <a href="http://git.lumberjaph.net/p5-dancer-debug.git/">Dancer::Debug</a> (which requires my fork of <a href="http://github.com/franckcuny/Plack-Middleware-Debug">P::M::Debug</a>), a middleware that add panels, with specific informations for Dancer applications.
 
 <img src="/static/imgs/4535496880_37e5e68a57_z.jpg"alt="Dancer::Debug middleware" />
 

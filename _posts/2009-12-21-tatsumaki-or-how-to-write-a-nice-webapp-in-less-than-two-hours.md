@@ -6,7 +6,7 @@ title: Tatsumaki, or how to write a nice webapp in less than two hours
 
 Until today, I had a script named "lifestream.pl". This script was triggered via cron once every hour, to fetch various feeds from services I use (like <a href="http://github.com/">github</a>, <a href="http://identi.ca/">identi.ca</a>, ...) and to process the result through a template and dump the result in a HTML file.
 
-Today I was reading <a href="http://github.com/miyagawa/Tatsumaki">Tatsumaki's code</a> and some examples (<a href="http://github.com/gugod/Social">Social</a> and <a href="http://github.com/miyagawa/Subfeedr">Subfeedr</a>). Tatsumaki is a "port" <a href="http://www.tornadoweb.org/">tornado</a> (a non blocking server in Python), based on Plack and AnyEvent. I though that using this to replace my old lifestream script would be a good way to test it. Two hours later I have a complete webapp that works (and the code is available <a href="http://github.com/franckcuny/lifestream">here</a>).
+Today I was reading <a href="http://github.com/miyagawa/Tatsumaki">Tatsumaki's code</a> and some examples (<a href="http://github.com/gugod/Social">Social</a> and <a href="http://github.com/miyagawa/Subfeedr">Subfeedr</a>). Tatsumaki is a "port" <a href="http://www.tornadoweb.org/">tornado</a> (a non blocking server in Python), based on Plack and AnyEvent. I though that using this to replace my old lifestream script would be a good way to test it. Two hours later I have a complete webapp that works (and the code is available <a href="http://git.lumberjaph.net/p5-lifestream.git/">here</a>).
 
 The code is really simple: first, I define an handler for my HTTP request. As I have only one things to do (display entries), the handler is really simple:
 

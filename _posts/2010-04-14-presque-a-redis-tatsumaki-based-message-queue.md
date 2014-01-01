@@ -53,7 +53,7 @@ When a job is fetched, it's removed from the queue.
 
 ## A basic worker
 
-I've also uploaded [presque::worker](http://github.com/franckcuny/presque-worker/tree/) to GitHub. It's based on [AnyEvent::HTTP](http://search.cpan.org/perldoc?AnyEvent::HTTP) and [Moose](http://search.cpan.org/perldoc?Moose). Let's write a basic worker using this class:
+I've also pushed [presque::worker](http://git.lumberjaph.net/p5-presque-worker.git/). It's based on [AnyEvent::HTTP](http://search.cpan.org/perldoc?AnyEvent::HTTP) and [Moose](http://search.cpan.org/perldoc?Moose). Let's write a basic worker using this class:
 
 {% highlight perl %}
 use strict;

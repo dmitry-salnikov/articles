@@ -14,7 +14,7 @@ One of the nice things with Riak it's that it let you defined the N, R and W val
 * R: the number of replicas required to perform a read operation
 * W: the number of replicas needed for a write operation
 
-Riak comes with library for python ruby PHP and even javascript, but not for Perl. As all these libraries are just communicating with Riak via the REST interface, I've <a href="http://github.com/franckcuny/anyevent-riak">started to write one</a> using AnyEvent::HTTP, and <a href="http://github.com/franckcuny/kiokudb-backend-riak">also a backend for KiokuDB</a>.
+Riak comes with library for python ruby PHP and even javascript, but not for Perl. As all these libraries are just communicating with Riak via the REST interface, I've <a href="http://git.lumberjaph.net/p5-anyevent-riak.git/">started to write one</a> using AnyEvent::HTTP, and <a href="http://git.lumberjaph.net/p5-kiokudb-backend-riak.git/">also a backend for KiokuDB</a>.
 
 ## Installing and using Riak
 
@@ -151,4 +151,3 @@ my $dir = KiokuDB->new(
 
 $dir->txn_do(sub { $dir->insert($key => $object) });
 {% endhighlight %}
-

@@ -61,7 +61,7 @@ ETag: 7b502c3a1f48c8609ae212cdfb639dee39673f5e
 
 ### Plack::Middleware::Throttle
 
-[With this middleware](http://github.com/franckcuny/plack--middleware--throttle), you can control how many times you want to provide an access to your application. This module is not yet on CPAN, has I want to add some features, but you can get the code on github. There is four methods to control access:
+[With this middleware](http://git.lumberjaph.net/p5-plack-middleware-throttle.git/), you can control how many times you want to provide an access to your application. This module is not yet on CPAN, has I want to add some features, but you can get the code from git. There is four methods to control access:
 
 * Plack::Middleware::Throttle::Hourly: how many times in one hour someone can access the application
 * P::M::T::Daily: the same, but for a day
@@ -134,7 +134,7 @@ This middleware could be a very good companion to the [Dancer REST stuff](http:/
 
 ## another Tatsumaki application with Plack middlewares
 
-To demonstrate the use of this two middleware, [I wrote a small application](http://github.com/franckcuny/feeddiscovery) with Tatsumaki. This application fetch a page, parse it to find all the feeds declared, and return a JSON with the result.
+To demonstrate the use of this two middleware, [I wrote a small application](http://git.lumberjaph.net/p5-feeddiscovery.git/) with Tatsumaki. This application fetch a page, parse it to find all the feeds declared, and return a JSON with the result.
 
 {% highlight bash %}
 % GET http://feeddiscover.tirnan0g.org/?url=http://lumberjaph.net/blog/

@@ -22,7 +22,7 @@ The REST interface is simple, and there is only a few methods. It's fast (I will
 
 There have been a lot of refactoring lately. The main features missing right now are a simple HTML interface that will display various informations, pulling the data from the REST API (hint : if someone want to help to design this one ... :) ), websocket (sending a message to all workers).
 
-There is a Perl client to the REST API: [net::presque](http://github.com/franckcuny/net-presque), that you can use with [net::http::console](http://github.com/franckcuny/net-http-console):
+There is a Perl client to the REST API: [net::presque](http://git.lumberjaph.net/p5-net-presque.git/), that you can use with [net::http::console](http://git.lumberjaph.net/p5-net-http-console.git/):
 
 {% highlight bash %}
 % perl bin/http-console --api_lib Net::Presque --url http://localhost:5000
@@ -33,7 +33,7 @@ http://localhost:5000> fetch_job {"queue_name":"twitter_stream"}
 }
 {% endhighlight %}
 
-I've also wrote a better [worker for Perl](http://github.com/franckcuny/presque-worker). It's a Moose::Role that you apply to your class. You need to write a **work** method, and your done. This worker handle retries, provide a logger, ... As for [resque](http://github.com/defunkt/resque), there is two dispatcher:
+I've also wrote a better [worker for Perl](http://git.lumberjaph.net/p5-presque-worker.git/). It's a Moose::Role that you apply to your class. You need to write a **work** method, and your done. This worker handle retries, provide a logger, ... As for [resque](http://github.com/defunkt/resque), there is two dispatcher:
 
 * normal : the worker grab a job, process it, then ask for the next job
 * fork : the worker grab a job, fork, let the child do the job and exit, while the parent ask for the next job. As resque says, "Resque assumes chaos". And me too, I like (ordered) chaos
