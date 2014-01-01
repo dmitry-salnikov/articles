@@ -12,7 +12,7 @@ Let's mimic their page.
 
 ## Installation
 
-1. install [Plack::Middleware::ConsoleLogger](http://search.cpan.org/perldoc?Plack::Middleware::ConsoleLogger) (`cpanm Plack::Middleware::ConsoleLogger`)
+1. install [Plack::Middleware::ConsoleLogger](http://search.cpan.org/perldoc?Plack::Middleware::ConsoleLogger) with `cpanm Plack::Middleware::ConsoleLogger`
 2. no step 2
 3. no step 3
 4. write a simple PSGI application and log

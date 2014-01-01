@@ -15,7 +15,6 @@ At the moment I'm especially interested in functional programming. When I write 
 
 You can find me on a variety of social web sites:
 
-* [Bitbucket](https://bitbucket.org/franckcuny)
 * [Twitter](https://twitter.com/franckcuny)
 * [GitHub](https://github.com/franckcuny)
 

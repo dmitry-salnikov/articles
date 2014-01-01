@@ -5,7 +5,7 @@ title: Private and protected methods with Moose
 ---
 Yesterday, one of our interns asked me a question about private method in <a href="http://www.iinteractive.com/moose/">Moose</a>. I told him that for Moose as for Perl, there is no such things as private method. By convention, methods prefixed with '_' are considered private.
 
-But I was curious to see if it would be something complicated to implement in Moose. First, I've started to look at how the 'augment' keyword is done. I've then hacked Moose directly to add the private keyword. After asking advice to <a href="http://blog.woobling.org/">nothingmuch</a>, he recommended me that I implement this in a MooseX::* module instead. The result is <a href="https://bitbucket.org/franckcuny/moosex-methodprivate">here</a>.
+But I was curious to see if it would be something complicated to implement in Moose. First, I've started to look at how the 'augment' keyword is done. I've then hacked Moose directly to add the private keyword. After asking advice to <a href="http://blog.woobling.org/">nothingmuch</a>, he recommended me that I implement this in a MooseX::* module instead. The result is <a href="http://git.lumberjaph.net/p5-moosex-methodprivate.git/">here</a>.
 
 From the synopsis, MooseX::MethodPrivate do:
 

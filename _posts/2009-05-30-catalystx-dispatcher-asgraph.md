@@ -22,6 +22,6 @@ $graph->run;
 print $graph->graph->as_txt;
 {% endhighlight %}
 
-The code is on [Bitbucket](https://bitbucket.org/franckcuny/catalystx-dispatcher-asgraph) for the moment.
+The code is on [my git server](http://git.lumberjaph.net/p5-catalystx-dispatcher-asgraph.git/) for the moment.
 
 For thoses who are interested by visualization, I'll publish soon some (at least I think) really nice visualisations about CPAN, Perl, and his community, that we have created at [$work](http://rtgi.fr).

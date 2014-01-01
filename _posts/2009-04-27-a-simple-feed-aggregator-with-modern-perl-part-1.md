@@ -11,7 +11,7 @@ Following [Matt's post](http://www.shadowcat.co.uk/blog/matt-s-trout/iron-man/) 
  * the third one will be about writing tests with **Test::Class**
  * the last one will focus on **Catalyst**
 
-The code of these modules will be available on [my Bitbucket account](https://bitbucket.org/franckcuny/) at the same time each article is published.
+The code of these modules will be available on [my git server](http://git.lumberjaph.net/) at the same time each article is published.
 
 > I'm not showing you how to write the perfect feed aggregator.  The purpose of this series of articles is only to show you how to write a simple aggregator using modern Perl.
 
@@ -132,6 +132,6 @@ This script will deploy for you the schema (you need to create the database firs
 
 Executing the following command `perl bin/deploy_mymodel.pl --dsn dbi:SQLite:model.db` will generate a **model.db** database so we can work and test it. Now that we got our (really) simple **MyModel** schema, we can start to hack on our aggregator.
 
-[The code is available on Bitbucket](https://bitbucket.org/franckcuny/ironman-mymodel/overview).
+[The code is available on my git server](http://git.lumberjaph.net/p5-ironman-mymodel.git/).
 
 > while using **DBIx::Class**, you may want to take a look at the generated queries. For this, export `DBIC_TRACE=1` in your environment, and the queries will be printed on STDERR.
