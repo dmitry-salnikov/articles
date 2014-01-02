@@ -10,7 +10,6 @@
   I don't really care about a clear history for the blog.
 
 * Write an article
-  Drafts should be in the *_drafts* folder.
 
 * Publish
   Publishing the blog is easy, you just have to run =make publish= and the site will be generated and rsync'ed to the server.
