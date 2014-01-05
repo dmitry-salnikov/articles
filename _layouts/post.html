@@ -1,28 +1,32 @@
 ---
 layout: default
 ---
+<div id="logo">
+  <a href='/list.html'><img src='http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/EnsoZen.png/50px-EnsoZen.png' alt='' /></a>
+</div>
+
 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-{% if page.previous.url %} 
+{% if page.previous.url %}
     <p id="bigleft"><a href="{{page.previous.url}}">&laquo;</a></p><br />
-{% endif %} 
-{% if page.next.url %} 
-    <p id="bigright"><a href="{{page.next.url}}">&raquo;</a></p> 
-{% endif %} 
+{% endif %}
+{% if page.next.url %}
+    <p id="bigright"><a href="{{page.next.url}}">&raquo;</a></p>
+{% endif %}
 
 <div id="entry">
   {{ content }}
 
   <p class="timestamp">
-    {% if page.previous.url %} 
+    {% if page.previous.url %}
       <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> |
     {% endif %}
 
     {{ page.date | date_to_string }}
 
-    {% if page.next.url %} 
-      | <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a> 
-    {% endif %} 
+    {% if page.next.url %}
+      | <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
   </p>
 
 </div>

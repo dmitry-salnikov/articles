@@ -1,5 +1,12 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url('/static/fonts/cabin.ttf') format('truetype');
+}
+
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif;
 }
 
 body { 
@@ -12,7 +19,7 @@ div#container {
 }
 
 h1 {
-    margin: 1.5em 0 0 0;
+    margin: 1.5em 0 0 3em;
 }
 
 h1 a {
@@ -49,7 +56,7 @@ blockquote {
 }
 
 #entry, #wrapper {
-    font-size: 13pt;
+    font-size: 15pt;
 }
 
 #entry img {
@@ -60,6 +67,11 @@ blockquote {
 img.right {
     float: right;
     margin-left: 1em;
+}
+
+div#logo {
+    margin: -0.2em 0 0 0;
+    float: left;
 }
 
 #entry, #entries, #wrapper, #resume {
