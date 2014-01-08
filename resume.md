@@ -9,7 +9,7 @@ title: Résumé
 
     <div style='text-align: center;'>
         <a name='top'></a><h2>Franck Cuny</h2>
-        <address>franckcuny<span style='display: none;'>¡no spam thank you!</span>@gmail.com</address>
+        <address>franck<span style='display: none;'>¡no spam thank you!</span>@lumberjaph.net</address>
     </div>
 
     <div id='interests'>
