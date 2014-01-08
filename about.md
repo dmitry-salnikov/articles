@@ -11,7 +11,7 @@ title: About Me
 
 I'm a French guy who moved to the Bay Area in 2011. I work as a software developer in [Say Media](http://saymedia.com)'s operations team.
 
-At the moment I'm especially interested in functional programming. When I write code for myself, I do it mostly with [Clojure](http://clojure.org) and [Racket](http://racket-lang.org). Recently I've also decided to start learning Haskell (about time!).
+At the moment I'm especially interested in functional programming. When I write code for myself, I do it mostly with [Clojure](http://clojure.org) and [Racket](http://racket-lang.org).
 
 You can find me on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). If you need to contact me, feel free to email me at [franck.cuny@gmail.com](mailto:franck.cuny@gmail.com). If you rather wish to contact me privately, please use my [PGP key](/franckcuny-pubkey.gpg) (1162893A).
 
