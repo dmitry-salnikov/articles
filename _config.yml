@@ -2,5 +2,6 @@ permalink: /:title/
 pygments: true
 markdown: redcarpet
 name: lumberjaph.net
+future: false
 redcarpet:
     extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
