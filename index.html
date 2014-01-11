@@ -1,37 +1,19 @@
 ---
-layout: default
+layout: static
+title: Writings
 ---
 
-{% assign page = site.posts.first %}
+<h1><a href='/'>Writings</a></h1>
 
-<div id="logo">
-  <a href='/list.html'><img src='/static/imgs/logo.png' alt='' /></a>
+<div id='wrapper'>
+  <ul>
+    {% for post in site.posts %}
+    {% unless post.type == "codex" %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <span class="date">{{ post.date | date_to_string }}</span>
+    </li>
+    {% endunless %}
+    {% endfor %}
+  </ul>
 </div>
-
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-
-{% if page.previous.url %}
-    <p id="bigleft"><a href="{{page.previous.url}}">&laquo;</a></p><br />
-{% endif %}
-{% if page.next.url %}
-    <p id="bigright"><a href="{{page.next.url}}">&raquo;</a></p>
-{% endif %}
-
-<div id="entry">
-  {{ page.content }}
-
-  <p class="timestamp">
-    {% if page.previous.url %}
-      <a href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a> |
-    {% endif %}
-
-    {{ page.date | date_to_string }}
-
-    {% if page.next.url %}
-      | <a href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    {% endif %}
-  </p>
-
-</div>
-
-{% include footer.html %}
