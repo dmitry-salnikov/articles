@@ -2,6 +2,7 @@
 layout: post
 summary: In which I have to patch offline imap to make it work on OS X.
 title: offlineimap on osx
+type: codex
 ---
 
 If you are using offlineimap on leopard, on an imap connection with ssl (like GMail) and it keep crashing because of the following error:

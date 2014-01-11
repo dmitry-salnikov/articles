@@ -2,6 +2,7 @@
 layout: post
 summary: In which I control xmms2 from vim.
 title: controll xmms2 from vim
+type: codex
 ---
 
 a really basic way to controll xmms2 from your vim session:
@@ -15,4 +16,3 @@ map <leader>xs <Esc>:!xmms2 stop<CR><CR>
 {% endhighlight %}
 
 now, type `,xn` in vim, and xmms2 will start to play the next track from your playlist.
-

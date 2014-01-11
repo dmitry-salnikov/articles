@@ -2,6 +2,7 @@
 layout: post
 title: debug your DBIx::Class queries
 summary: In which I explain how to see SQL queries generated for DBIx::Class.
+type: codex
 ---
 
 If you use DBIx::Class and want to see what the SQL generated looks like, you can set the environment variable **DBIC_TRACE**.

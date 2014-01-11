@@ -2,6 +2,7 @@
 layout: post
 summary: In which I add a hook to git to run my tests.
 title: Git and prove
+type: codex
 ---
 
 A little trick to force you to run your tests before a commit:

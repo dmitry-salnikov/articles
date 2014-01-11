@@ -2,6 +2,7 @@
 layout: post
 title: Setting up cgit with Ansible
 summary: In which I share how I install cgit with Ansible.
+type: codex
 ---
 
 I've [already write](/ansible-and-chef/) about [Ansible](http://www.ansibleworks.com/). I use it to manage and configure my servers (most of them are VMs running on my laptop, but the idea is the same). One of the server is used to store my personal git repositories, and I wanted to use [cgit](http://git.zx2c4.com/cgit/) as the front end for the public repositories instead of the old and slow [gitweb](https://git.wiki.kernel.org/index.php/Gitweb).

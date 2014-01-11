@@ -2,6 +2,7 @@
 layout: post
 title: Vim function for creating new task
 summary: In which I add a few functions for my vim wiki.
+type: codex
 ---
 
 I've added a new function to my .vimrc for creating quickly a new task:

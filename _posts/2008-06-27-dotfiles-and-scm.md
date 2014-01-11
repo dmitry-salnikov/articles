@@ -2,6 +2,7 @@
 layout: post
 summary: In which I share how I manage my dotfiles.
 title: Dotfiles and SCM
+type: codex
 ---
 
 All my dotfiles are stored in a SCM. Most of the time I'm on my main computer, but I can be working on a server or a different workstation. In this case, I like to have all my configurations for zsh, vim, screen, etc.

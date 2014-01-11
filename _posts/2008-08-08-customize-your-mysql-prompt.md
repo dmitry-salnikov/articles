@@ -2,6 +2,7 @@
 layout: post
 summary: In which we customize our MySQL prompt
 title: Customize your MySQL prompt
+type: codex
 ---
 
 To customize your MySQL prompt, create a .my.cnf file in your $HOME then add the following:

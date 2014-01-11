@@ -2,6 +2,7 @@
 layout: post
 summary: In which I share another snippet of code for vim.
 title: vim and git
+type: codex
 ---
 
 idea from [Ovid's journal](http://use.perl.org/use.perl.org/_Ovid/journal/37966.html) (ovid is full of really good ideas for vim):

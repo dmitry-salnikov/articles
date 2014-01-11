@@ -2,6 +2,7 @@
 layout: post
 summary: In which I show how I manage my $PERL5LIB.
 title: $PERL5LIB and zsh
+type: codex
 ---
 
 in my .zsh.d/S80_perl

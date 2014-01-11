@@ -2,6 +2,7 @@
 layout: post
 summary: In which we tidify a JSON in vim.
 title: tidify a json in vim
+type: codex
 ---
 
 If you have to edit json files from vim, you may want to make them more readable, here is how you can do this:

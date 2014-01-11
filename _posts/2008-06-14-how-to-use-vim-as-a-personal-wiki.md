@@ -2,6 +2,7 @@
 layout: post
 title: On how to use vim as a personal wiki
 summary: In which I describe how I use vim as a personal wiki.
+type: codex
 ---
 
 There is different reasons to want a personal wiki on your machine:

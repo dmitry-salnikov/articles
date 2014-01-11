@@ -2,6 +2,7 @@
 layout: post
 summary: In which we upgrade to Perl 5.10.
 title: Upgrading to perl 5.10
+type: codex
 ---
 
 Get the list of your installed 5.8 modules:

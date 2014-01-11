@@ -2,6 +2,7 @@
 layout: post
 title: keep your zshrc simple
 summary: In which I explain how I maintain my zsh configuration.
+type: codex
 ---
 
 Keep your .zshrc simple. Mine looks like this :

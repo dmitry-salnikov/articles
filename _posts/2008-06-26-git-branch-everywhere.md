@@ -2,6 +2,7 @@
 layout: post
 title: Git branch everywhere
 summary: In which I share a snippet of code to display a git branch in vim.
+type: codex
 ---
 
 The current trend is to have the name of the current git branch everywhere. Personnaly I display it in my vim's status bar, and in my zsh prompt.

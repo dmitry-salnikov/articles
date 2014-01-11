@@ -2,6 +2,7 @@
 layout: post
 title: Mirror cpan
 summary: In which I setup a mirror of CPAN using minicpan.
+type: codex
 ---
 
 For the last 10 months, I've been living with no internet connection at home (not on purpose, but this is another story), so I've tried to be as much as possible independent from the web. I've started to use git for being able to work off-line, I use Vim as a wiki on my computer, my blog engine for writing post off-line, ...
