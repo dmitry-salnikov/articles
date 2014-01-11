@@ -13,6 +13,6 @@ I'm a French guy who moved to the Bay Area in 2011. I work as a software develop
 
 At the moment I'm especially interested in functional programming. When I write code for myself, I do it mostly with [Clojure](http://clojure.org) and [Racket](http://racket-lang.org).
 
-You can find me on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). If you need to contact me, feel free to email me at [franck.cuny@gmail.com](mailto:franck@lumberjaph.net). If you rather wish to contact me privately, please use my [PGP key](/franckcuny-pubkey.gpg) (1162893A).
+You can find me on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). If you need to contact me, feel free to email me at [franckcuny@gmail.com](mailto:franck.cuny@gmail.com). If you rather wish to contact me privately, please use my [PGP key](/franckcuny-pubkey.gpg) (1162893A).
 
 I'm a proud member of [Paris.pm](http://paris).
