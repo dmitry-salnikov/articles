@@ -1,3 +1,9 @@
+---
+layout: post
+title: How I learned to stop worrying and love Emacs
+summary: In which I share my love for Emacs.
+---
+
 Until a few years ago I was a vi user. One of my then co-worker was a heavy Emacs user and I used to make fun of him.
 
 Like many developers, I was obsessed with my configuration files, trying to improve.

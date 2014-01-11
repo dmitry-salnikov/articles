@@ -1,3 +1,10 @@
+---
+layout: post
+title: On pair programming
+summary: In which I share how I'm doing pair programming.
+---
+
+
 I'm working in a small team, since it's only me and Hachi.  We've been working together for about 8 months now, and we've developed an interesting way to work.  Our projects can be differents, it can be coding, experimeneting tools, deploying them, build systems around tools, etc.
 
 ## Setup
