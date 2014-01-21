@@ -19,7 +19,7 @@ div#container {
 }
 
 h1 {
-    margin: 1.5em 0 0 3em;
+    margin: 1.5em 0 0 0;
 }
 
 h1 a {
@@ -27,9 +27,14 @@ h1 a {
 }
 
 blockquote {
-    background-color: #eee;
-    margin: 1em;
-    padding: 0.3em 1em;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: italic;
+    border-left: 3px solid #57ad68;
+    padding-left: 20px;
+    margin-left: -26px;
+    padding-bottom: 3px;
 }
 
 #entry, #wrapper {
@@ -46,14 +51,7 @@ img.right {
     margin-left: 1em;
 }
 
-div#logo {
-    margin: -0.2em 0 0 0;
-    float: left;
-}
-
 #entry, #entries, #wrapper, #resume {
-    width: 40em;
-    margin-left: 5em;
     text-align: justify;
     line-height: 1.6em;
 }
