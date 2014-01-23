@@ -49,6 +49,7 @@ redirects:
   about.html: about/
   projects.html: projects/
   resume.html: resume/
+  codex.html: codex/
   
 
 # routing_rules:
