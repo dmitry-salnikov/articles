@@ -47,6 +47,8 @@ redirects:
   catalystxdispatcherasgraph/: catalystx-dispatcher-asgraph/
   talks/index.html: projects/
   about.html: about/
+  projects.html: projects/
+  resume.html: resume/
   
 
 # routing_rules:
