@@ -8,7 +8,7 @@ summary: In which I share my enthusiasm for Vagrant
 
 I've been toying with [vagrant](http://vagrantup.com/) lately, and it **really rocks**. You should definitly give it a try. If you're only looking for some resources to get started with it, go there:
 
- * [introduction](http://docs.vagrantup.com/v2/why-vagrant/index.html)
+ * [introduction](http://docs.vagrantup.com/v2/why-vagrant/)
  * [google group](http://groups.google.com/group/vagrant-up)
 
 ## What is Vagrant
@@ -23,7 +23,7 @@ I won't go into the details to describe Chef and VirtualBox, but here is a quick
 
 ## The basic
 
-To install vagrant, you'll need ruby and virtualbox. You have the basic instructions detailed [here](http://docs.vagrantup.com/v2/getting-started/index.html). This will explain how to install vagrant and how to fetch a **base** image.
+To install vagrant, you'll need ruby and virtualbox. You have the basic instructions detailed [here](http://docs.vagrantup.com/v2/getting-started/). This will explain how to install vagrant and how to fetch a **base** image.
 
 ### Creating a first project
 
