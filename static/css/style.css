@@ -1,12 +1,14 @@
-@font-face {
-  font-family: 'Cabin';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Cabin Regular'), local('Cabin-Regular'), url('/static/fonts/cabin.ttf') format('truetype');
-}
+/* @font-face { */
+/*   font-family: 'Cabin'; */
+/*   font-style: normal; */
+/*   font-weight: 400; */
+
+/*   src: local('Cabin Regular'), local('Cabin-Regular'), url('/static/fonts/cabin.ttf') format('truetype'); */
+/* } */
 
 * {
-    font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif;
+    font-family: 'Helvetica Neue'
+    /* font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif; */
 }
 
 body { 
@@ -26,6 +28,12 @@ h1 a {
     text-decoration: none;
 }
 
+#entry code,#entry pre,#entry code,#entry pre{
+    font:13px Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
+    -webkit-font-smoothing:subpixel-antialiased;
+    font-smoothing:subpixel-antialiased
+}
+
 blockquote {
     font-family: Georgia,Cambria,"Times New Roman",Times,serif;
     letter-spacing: .01rem;
@@ -38,7 +46,7 @@ blockquote {
 }
 
 #entry, #wrapper {
-    font-size: 15pt;
+    font-size: 18px;
 }
 
 #entry img {
