@@ -6,24 +6,37 @@
 
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@franckcuny"/>
   <meta name="twitter:site" content="@franckcuny"/>
   <meta name="twitter:title" content="{{ page.title }}"/>
   <meta name="twitter:domain" content="lumberjaph.net">
   <meta name="twitter:description" content="{{ page.summary }}">
+
   <title>{{ page.title }} | lumberjaph.net</title>
 
-  <link rel="stylesheet" href="/static/css/style.css" type="text/css"/>
-  <link rel="stylesheet" href="/static/css/pygments.css" type="text/css"/>
+  {% css_asset_tag global %}
+  - /_assets/screen.scss
+  {% endcss_asset_tag %}
+
+  <link rel="stylesheet" href="/assets/pygments.css" type="text/css"/>
 
   <link rel="canonical" href="http://lumberjaph.net{{ page.url | replace:'index.html','' }}" />
-
 </head>
 
-<body>
-  <div id="container"> {{ content }} </div>
+<body style>
+
+  {% include cover.html %}
+
+  <div id="site"> {{ content }} </div>
+
+  {% include footer.html %}
+
 </body>
+
+
 
 </html>
