@@ -194,6 +194,9 @@ a img{
 
 #cover_wrap {
   width: 623px;
+      @include tablet-portrait-and-below {
+            width: 90%;
+          }
   margin: auto;
   line-height: 1;
   border-bottom: 1px solid #e8ebf2;
@@ -328,6 +331,9 @@ text-align: center;
 
     .post-listing {
           width: 623px;
+                @include tablet-portrait-and-below {
+            width: 90%;
+          }
       margin: auto;
         padding-left: 0px;
         display: block;
@@ -367,6 +373,9 @@ text-align: center;
 
         .entry-title {
           width: 623px;
+          @include tablet-portrait-and-below {
+            width: 90%;
+          }
           margin: 15px auto;
           font-size: 100%;
           h1 {
@@ -410,16 +419,27 @@ text-align: center;
             padding: .35em;
         }
 
-        code {
+        .highlight code {
             font-size: 95%;
         }
 
+        p code, li code {
+           background-color: #eee;
+           font-weight: 700;
+           font-size: 110%;
+        }
+        
         .highlight {
             margin: 1.5em 0;
         }
 
         p {
             margin: 0 0 1.5em;
+        }
+
+        h2 {
+           font-weight: 700;
+           font-size: 1.2em;
         }
     }
 }
