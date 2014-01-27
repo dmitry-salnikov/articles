@@ -52,11 +52,11 @@ For some other services we might need something more specific.  Let's take a loo
 
 Then, it will send the following lines to `statsd` (with $base being the vhost in our case):
 
-* **$base.all.requests:1\|c** increases the total of HTTP requests we're receiving
-* **$base.all.bytes:$bytes\|ms** send the size, in bytes, of that request
-* **$base.all.time:$msec\|ms** the time spend to get the response
+* `$base.all.requests:1|c` increases the total of HTTP requests we're receiving
+* `$base.all.bytes:$bytes|ms` send the size, in bytes, of that request
+* `$base.all.time:$msec|ms` the time spend to get the response
 
-Now we will send the same line two more times, with a different prefix: **$base.method.$request_method** *and* **$base.status.$status**.
+Now we will send the same line two more times, with a different prefix: `$base.method.$request_method` *and* `$base.status.$status`.
 
 ### Applications
 
