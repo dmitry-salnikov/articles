@@ -8,188 +8,187 @@ $mq-desktop		: 86.375em !default;
 
 // Both portrait and landscape
 @mixin mobile-only {
-    @media (max-width : $mq-mobile-landscape) {
-	@content;
-    }
+  @media (max-width : $mq-mobile-landscape) {
+    @content;
+  }
 }
 
 // Everything up to and including the portrait width of the phone
 // Since it's the smallest query it doesn't need a min
 @mixin mobile-portrait-only {
-    @media (max-width : $mq-mobile-portrait) {
-	@content;
-    }
+  @media (max-width : $mq-mobile-portrait) {
+    @content;
+  }
 }
 
 // Everything up to and including the mobile portrait
 @mixin mobile-portrait-and-below {
-    @media (max-width : $mq-mobile-portrait) {
-	@content;
-    }
+  @media (max-width : $mq-mobile-portrait) {
+    @content;
+  }
 }
 
 // Everything above and including the mobile portrait
 @mixin mobile-portrait-and-up {
-    @media (min-width : $mq-mobile-portrait) {
-	@content;
-    }
+  @media (min-width : $mq-mobile-portrait) {
+    @content;
+  }
 }
 
 // Everthing larger than a portrait mobile up until mobile landscape
 @mixin mobile-landscape-only {
-    @media only screen and (min-width : $mq-mobile-portrait + .001) and (max-width : $mq-mobile-landscape) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-mobile-portrait + .001) and (max-width : $mq-mobile-landscape) {
+    @content;
+  }
 }
 
 // Everything up to and including the mobile landscape width
 @mixin mobile-landscape-and-below {
-    @media only screen and (max-width : $mq-mobile-landscape) {
-	@content;
-    }
+  @media only screen and (max-width : $mq-mobile-landscape) {
+    @content;
+  }
 }
 
 // Everything above and including the mobile landscape width
 @mixin mobile-landscape-and-up {
-    @media only screen and (min-width : $mq-mobile-portrait + .001) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-mobile-portrait + .001) {
+    @content;
+  }
 }
 
 // Both the portrait and landscape width of the tablet
 // Larger than a landscape mobile but less than or equal to a landscape tablet
 @mixin tablet-only {
-    @media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-landscape) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-landscape) {
+    @content;
+  }
 }
 
 // Everything larger than mobile landscape up until the portrait width of the tablet
 @mixin tablet-portrait-only {
-    @media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-portrait) {
-	    @content;
-    }
+  @media only screen and (min-width : $mq-mobile-landscape + .001) and (max-width : $mq-tablet-portrait) {
+    @content;
+  }
 }
 
 // Everything below and including the portrait width of the tablet
 @mixin tablet-portrait-and-below {
-    @media only screen and (max-width : $mq-tablet-portrait) {
-	@content;
-    }
+  @media only screen and (max-width : $mq-tablet-portrait) {
+    @content;
+  }
 }
 
 // Everything above and including the portrait width of the tablet
 @mixin tablet-portrait-and-up {
-    // @media only screen and (min-width : $mq-mobile-landscape + 1) {
-	@media only screen and (min-width : $mq-tablet-portrait + .001) {
-	    @content;
-	}
+  // @media only screen and (min-width : $mq-mobile-landscape + 1) {
+  @media only screen and (min-width : $mq-tablet-portrait + .001) {
+    @content;
+  }
 }
 
 // Larger than portrait but less than or equal to the landscape width
 @mixin tablet-landscape-only {
-    @media only screen and (min-width : $mq-tablet-portrait + .001) and (max-width : $mq-tablet-landscape) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-tablet-portrait + .001) and (max-width : $mq-tablet-landscape) {
+    @content;
+  }
 }
 
 // Up to and including the tablet landscape
 @mixin tablet-landscape-and-below {
-    @media only screen and (max-width : $mq-tablet-landscape) {
-	@content;
-    }
+  @media only screen and (max-width : $mq-tablet-landscape) {
+    @content;
+  }
 }
 
 // Everything larger than portrait tablet
 @mixin tablet-landscape-and-up {
-    @media only screen and (min-width : $mq-tablet-portrait + .001) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-tablet-portrait + .001) {
+    @content;
+  }
 }
 
 // Everything larger than a landscape tablet
 @mixin desktop-and-up {
-    @media only screen and (min-width : $mq-tablet-landscape + .001) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-tablet-landscape + .001) {
+    @content;
+  }
 }
 
 // Everything below and including the desktop
 @mixin desktop-and-below {
-    @media only screen and (max-width : $mq-desktop) {
-	@content;
-    }
+  @media only screen and (max-width : $mq-desktop) {
+    @content;
+  }
 }
 
 // Everything larger than a landscape tablet but less than or equal to the desktop
 @mixin desktop-only {
-    @media only screen and (min-width : $mq-tablet-landscape + .001) and (max-width : $mq-desktop) {
-	@content;
-    }
+  @media only screen and (min-width : $mq-tablet-landscape + .001) and (max-width : $mq-desktop) {
+    @content;
+  }
 }
 
 @mixin retina {
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
-	@content;
-    }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 13/10), only screen and (min-resolution: 120dpi) {
+    @content;
+  }
 }
 
 @mixin image-2x($image, $width: auto, $height: $width) {
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
-    only screen and (-o-min-device-pixel-ratio: 13/10),
-    only screen and (min-resolution: 120dpi) {
-        background-image: url($image);
-        @if $width != auto {
-            background-size: $width $height;
-        }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+  only screen and (-o-min-device-pixel-ratio: 13/10),
+  only screen and (min-resolution: 120dpi) {
+    background-image: url($image);
+    @if $width != auto {
+      background-size: $width $height;
     }
+  }
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 body {
-    // font-family: 'Cabin', sans-serif;
-    font-family: 'Actor', sans-serif;
-    background-color: #fff;
-    font-weight:400;
-    text-align:left;
+  font-family: 'Actor', sans-serif;
+  background-color: #fff;
+  font-weight:400;
+  text-align:left;
 
-    margin: auto;
-    font-size: 15px;
+  margin: auto;
+  font-size: 15px;
 
-    @include tablet-portrait-and-below {
-        font-size: 0.8em;
-    }
+  @include tablet-portrait-and-below {
+    font-size: 0.8em;
+  }
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 a {
-    color:#4c6296;
-    text-decoration:none;
-    outline:0
+  color:#4c6296;
+  text-decoration:none;
+  outline:0
 }
 
 a:hover{
-    color:#173061;
-    text-decoration:none
+  color:#173061;
+  text-decoration:none
 }
 
 a:visited{
-    color:#6a4c96
+  color:#6a4c96
 }
 
 a:visited:hover{
-    color:#463263
+  color:#463263
 }
 
 a img{
-    border:0
+  border:0
 }
 
 #cover_wrap {
@@ -207,7 +206,7 @@ a img{
     header {
       display: block;
     }
-  
+    
     margin: 0 auto;
     color: #57626b;
 
@@ -215,7 +214,7 @@ a img{
       line-height: 0.8;
       float: left;
       h1 {
-       line-height: 1;
+        line-height: 1;
       }
     }
 
@@ -255,38 +254,36 @@ a img{
 
 
 #footer {
-    width: 623px;
-    margin: auto;
-    @include tablet-portrait-and-below {
-      width: 90%;
-    }
+  width: 623px;
+  margin: auto;
+  @include tablet-portrait-and-below {
+    width: 90%;
+  }
 
-    border-top: 1px solid #e8ebf2;
-    box-shadow: inset 0 1px 0 #fff;
-    background: #fdfdfd;
+  border-top: 1px solid #e8ebf2;
+  box-shadow: inset 0 1px 0 #fff;
+  background: #fdfdfd;
 
-    display: block;
+  display: block;
 
-    .center_mod {
-      margin: 0 auto;
-    }
-    
-
+  .center_mod {
+    margin: 0 auto;
+  }
 }
 
 .nav {
-     float: right;
-     padding: 0;
-        li {
-            line-height:1.3;
-            display: inline-block;
-            a {
-              margin-right: 16px;
-              font-weight: 700;
-              color: #9198ad;
-              font-size: 12px;
-        }
+  float: right;
+  padding: 0;
+  li {
+    line-height:1.3;
+    display: inline-block;
+    a {
+      margin-right: 16px;
+      font-weight: 700;
+      color: #9198ad;
+      font-size: 12px;
     }
+  }
 }
 
 img {
@@ -298,144 +295,143 @@ img {
 }
 
 figure {
-margin: 4em 0;
-display: block;
-text-align: center;
+  margin: 4em 0;
+  display: block;
+  text-align: center;
 }
 
 #site{
+  section {
+    width: 623px;
+    margin: auto;
+    @include tablet-portrait-and-below {
+      width: 90%;
+    }
+  }
 
-    section {
+  margin: auto;
+  text-align: left;
+  line-height: 1.65;
+  font-weight: 400;
+  font-size: 110%;
+
+  li {
+    line-height: 1.2em;
+  }
+
+  .post-listing {
+    width: 623px;
+    @include tablet-portrait-and-below {
+      width: 90%;
+    }
+    margin: auto;
+    padding-left: 0px;
+    display: block;
+    list-style-image: none;
+    list-style-position: outside;
+    margin-bottom: 1em;
+  }
+  .post-listing li {
+    list-style-type: none;
+    margin: 2.5em 0;
+  }
+  .post-listing li:first-child {
+    margin-top: 0;
+  }
+  .post-listing li h2 {
+    color: #2C251D;
+  }
+  .post-listing .oneliner {
+    color: #4A4235;
+  }
+
+  .post-listing .entry-title {
+    margin: 15px auto;
+  }
+
+  .post-listing .entry-title h2 {
+    font-size: 1.7em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #2c251d;
+    line-height: 1.1;
+  }
+
+  #entry {
+    padding: 0;
+    margin: 0 auto;
+    font-weight: 300;
+    color: #222;
+    
+    .entry-title {
       width: 623px;
-      margin: auto;
       @include tablet-portrait-and-below {
         width: 90%;
       }
-    }
-
-    margin: auto;
-    text-align: left;
-    line-height: 1.65;
-    font-weight: 400;
-    font-size: 110%;
-
-    li {
-        line-height: 1.2em;
-    }
-
-    .post-listing {
-          width: 623px;
-                @include tablet-portrait-and-below {
-            width: 90%;
-          }
-      margin: auto;
-        padding-left: 0px;
-        display: block;
-        list-style-image: none;
-        list-style-position: outside;
-        margin-bottom: 1em;
-    }
-    .post-listing li {
-        list-style-type: none;
-        margin: 2.5em 0;
-    }
-    .post-listing li:first-child {
-        margin-top: 0;
-    }
-    .post-listing li h2 {
-        color: #2C251D;
-    }
-    .post-listing .oneliner {
-        color: #4A4235;
-    }
-
-    .post-listing .entry-title {
       margin: 15px auto;
+      font-size: 100%;
+      h1 {
+        color: #2c251d;
+        font-size: 2.2em;
+        font-weight: 700;
+        line-height: 1.1;
+      }
     }
 
-    .post-listing .entry-title h2 {
-      font-size: 1.7em;
-      font-weight: 500;
-      margin-bottom: 5px;
-      color: #2c251d;
-      line-height: 1.1;
+    section {
+      font-size: 100%;
+    }
+    
+    a {
+      font-weight: 600;
+      text-decoration: underline;
+      color: #4c6296;
     }
 
-    #entry {
-        padding: 0;
-        margin: 0 auto;
-        font-weight: 300;
-        color: #222;
-        
-        .entry-title {
-          width: 623px;
-          @include tablet-portrait-and-below {
-            width: 90%;
-          }
-          margin: 15px auto;
-          font-size: 100%;
-          h1 {
-             color: #2c251d;
-             font-size: 2.2em;
-             font-weight: 700;
-             line-height: 1.1;
-          }
-        }
-
-        section {
-             font-size: 100%;
-        }
-        
-        a {
-            font-weight: 600;
-            text-decoration: underline;
-            color: #4c6296;
-        }
-
-        a:visited {
-            color: #6a4c96;
-        }
-
-        blockquote {
-            border-left: 4px solid #eee;
-            margin-left: 0;
-            margin-right: 18px;
-            margin-bottom: 18px;
-            padding-left: 10px;
-            color: #666;
-        }
-
-        pre{
-            font-size: 13px;
-            font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
-            -webkit-font-smoothing:subpixel-antialiased;
-            font-smoothing:subpixel-antialiased;
-            background-color: #fff;
-            border: 1px solid #d1d8e3;
-            padding: .35em;
-        }
-
-        .highlight code {
-            font-size: 95%;
-        }
-
-        p code, li code {
-           background-color: #eee;
-           font-weight: 700;
-           font-size: 110%;
-        }
-        
-        .highlight {
-            margin: 1.5em 0;
-        }
-
-        p {
-            margin: 0 0 1.5em;
-        }
-
-        h2 {
-           font-weight: 700;
-           font-size: 1.2em;
-        }
+    a:visited {
+      color: #6a4c96;
     }
+
+    blockquote {
+      border-left: 4px solid #eee;
+      margin-left: 0;
+      margin-right: 18px;
+      margin-bottom: 18px;
+      padding-left: 10px;
+      color: #666;
+    }
+
+    pre{
+      font-size: 13px;
+      font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
+      -webkit-font-smoothing:subpixel-antialiased;
+      font-smoothing:subpixel-antialiased;
+      background-color: #fff;
+      border: 1px solid #d1d8e3;
+      padding: .35em;
+    }
+
+    .highlight code {
+      font-size: 95%;
+    }
+
+    p code, li code {
+      background-color: #eee;
+      font-weight: 700;
+      font-size: 110%;
+    }
+    
+    .highlight {
+      margin: 1.5em 0;
+    }
+
+    p {
+      margin: 0 0 1.5em;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+  }
 }
