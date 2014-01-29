@@ -315,10 +315,6 @@ figure {
   font-weight: 400;
   font-size: 110%;
 
-  li {
-    line-height: 1.2em;
-  }
-
   .post-listing {
     width: 623px;
     @include tablet-portrait-and-below {
@@ -355,6 +351,30 @@ figure {
     margin-bottom: 5px;
     color: #2c251d;
     line-height: 1.1;
+  }
+
+  #resume {
+    #interests {
+      p {
+        font-weight: 700;
+        margin-top: 4em;
+      }
+    }
+    h2 {
+      margin-top: 3em;
+      text-align: center;
+    }
+    h3 {
+      font-weight: 700;
+      font-size: 1.1em;
+    }
+    .exp {
+      padding-bottom: 1.2em;
+      border-bottom: 1px solid #dedede;
+    }
+    .exp:last-child {
+      border-bottom: 1px solid white;
+    }
   }
 
   #entry {
@@ -431,7 +451,8 @@ figure {
 
     h2 {
       font-weight: 700;
-      font-size: 1.2em;
+      font-size: 1.6em;
+      color: #5F516;
     }
   }
 }
