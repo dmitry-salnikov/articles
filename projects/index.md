@@ -3,9 +3,9 @@ layout: static
 title: Projects
 ---
 
-<div id='wrapper'>
+<section>
 
-<h4>Previous and Upcoming Talks</h4>
+<h2>Previous and Upcoming Talks</h2>
 
 <ul>
   <li><article itemscope itemtype="http://data-vocabulary.org/Event" class="talk">
@@ -81,4 +81,4 @@ title: Projects
     </li>
 </ul>
 
-</div>
+</section>
