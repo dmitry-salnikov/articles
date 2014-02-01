@@ -1,0 +1,17 @@
+---
+layout: static
+title: Articles
+---
+
+<ul class="post-listing">
+  {% for post in site.posts %}
+  <li>
+    <header class="entry-title">
+      <h2>
+        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </h2>
+      <p class="oneliner">{{ post.summary }}</p>
+    </header>
+  </li>
+  {% endfor %}
+</ul>
