@@ -429,6 +429,14 @@ figure {
       background-color: #fff;
       border: 1px solid #d1d8e3;
       padding: .35em;
+      overflow: auto;
+      overflow-y: hidden;
+    }
+
+    pre::-webkit-scrollbar {
+      height: 12px;
+      background-color: #fafafa;
+      border-top: 1px solid #d1d8e3;
     }
 
     .highlight code {
