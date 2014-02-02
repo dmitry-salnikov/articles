@@ -4,11 +4,11 @@ summary: In which I provision an EC2 instance with Vagrant and Ansible
 layout: post
 ---
 
-I like using [Ansible](http://www.ansible.com/) to manage my personal servers. It forces me to make the environment reproducible so I don't have to care about a specific box: I can throw them away easily, knowing I can get a new one when I need.
+I like to use [Ansible](http://www.ansible.com/) to manage my personal servers. It forces me to make the environment reproducible so I don't have to care about a specific box: I can throw them away easily, knowing I can get a new one when I need, with the exact same configuration.
 
-Ansible is also easier to reason about than Chef or Puppet, at least to me. The fact that I have to manage and maintain only a few machines is probably why.
+I also find Ansible easier to reason about than Chef or Puppet. The fact that I have to manage and maintain only a few machines is probably why.
 
-When I develop on my personal projects, I use a lot of VMs, and that's where [Vagrant](http://www.vagrantup.com/) enters the picture. Being able to start a local VM and get a clean environment quickly is invaluable to me. It makes it easy to test an application or library in different situation.
+When I develop on my personal projects, I use a lot of VMs, and that's where [Vagrant](http://www.vagrantup.com/) enters the picture. Being able to start a local VM and get a clean environment quickly is invaluable to me. It makes it easy to test an application or library in different situation, without carrying about local dependencies and conflicts created by having multiple versions of the same library installed on the system.
 
 But sometimes a local VM is not enough, and you need a more powerful server, so now you need an EC2 instance.
 
