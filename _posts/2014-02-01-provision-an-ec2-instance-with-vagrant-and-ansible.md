@@ -81,6 +81,14 @@ default                    : ok=2    changed=1    unreachable=0    failed=0
 
 As we can see, everything went well, and the application `htop` was successfully installed. We can now run `vagrant ssh` and once logged inside the VM, run `htop`.
 
+</section>
+
+<figure>
+<img alt="provisioning" src="/static/imgs/vagrant-ansible-ec2.jpg" Width="100%" height="100%" class='portrait' align='center'>
+</figure>
+
+<section>
+
 ## AWS
 
 I've created a key pair for Vagrant in the AWS console. Note the access and secret access keys, and download the SSH private key too. For this article, we will put the key into the same directory as our playbook and Vagrant's configuration.
