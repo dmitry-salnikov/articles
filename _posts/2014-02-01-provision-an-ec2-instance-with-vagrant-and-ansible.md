@@ -27,7 +27,7 @@ I have a private repository with all my rules for Ansible. But for this post, al
       apt: pkg=htop state=installed
 ```
 
-What we're saying, is that for all the hosts in our inventory we will use `sudo` to install the program `htop` using `apt-get` (yes, I assume you're using a debian-based system, but you get the idea).
+What we're describing, is that for all the hosts in our inventory we will use `sudo` to install the program `htop` using `apt-get` (yes, I assume you're using a debian-based system, but you get the idea).
 
 First, we will try the setup on a local box. If you don't already have a Vagrant box installed, you can grab a new one by running `vagrant box add precise64 http://files.vagrantup.com/precise64.box`.
 
@@ -45,7 +45,7 @@ end
 
 This file says that we will use the box named *precise64*, located at the given URL, and we want to provision it using Ansible, and the path to the playbook.
 
-By running `vagrant up`, a box gets started and provisioned. The output should be similar to this:
+By running `vagrant up`, a box gets started and provisioned. An inventory file is generated for us inside the directory, so ansible will know what to do. The output should be similar to this:
 
 ```
 Bringing machine 'default' up with 'virtualbox' provider...
@@ -116,9 +116,7 @@ end
 
 We need to override the user name to *ubuntu* and specify the path to the private key (the one we got from the AWS console when we created our new key pair) to log into the instance. The box also needs to be overridden.
 
-Running `vagrant up --provider=aws` will provision the box. It will also generates an inventory file for you inside the directory, so ansible will know what to do.
-
-It will takes a few minutes to start the instance and run the provisioning part. Wait a few minutes, but if it looks like the system is stuck, you can re-run the previous command by exporting `VAGRANT_LOG=debug` in order to get more detailed information.
+Running `vagrant up --provider=aws` will provision the box. It will takes a few minutes to start the instance and run the provisioning part. Wait a few minutes, but if it looks like the system is stuck, you can re-run the previous command by exporting `VAGRANT_LOG=debug` in order to get more detailed information.
 
 > If the provisioning blocks while trying to connect to ssh, it's probably because your security group doesn't allow SSH connections.
 
