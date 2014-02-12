@@ -1,15 +1,18 @@
-#+NAME: lumberjaph.net
+# lumberjaph.net
 
-* Setup
-  Ruby's [[http://bundler.io/][bundler]] is required to set up the blog. Follow the instructions:
+## Setup
 
-  + =gem install bundler=
-  + =bundler install=
+Ruby's [bundler](http://bundler.io/) is required to set up the blog. Follow the instructions:
 
-* Work on the blog
-  I don't really care about a clear history for the blog.
++ `gem install bundler`
++ `bundler install`
 
-* Write an article
+## Work on the blog
 
-* Publish
-  Publishing the blog is easy, you just have to run =make publish= and the site will be generated and rsync'ed to the server.
+I don't really care about a clear history for the blog.
+
+## Write an article
+
+## Publish
+
+Just run `git push`.
