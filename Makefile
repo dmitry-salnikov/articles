@@ -5,7 +5,7 @@ clean:
 	rm -rf _site
 
 server: clean
-	bundle exec jekyll server --watch --drafts
+	bundle exec jekyll server --port 3001 --watch --drafts
 
 publish: build
 	s3_website push
