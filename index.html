@@ -1,17 +1,17 @@
 ---
-layout: static
-title: Writings
+layout: default
 ---
 
-<ul class="post-listing">
-  {% for post in site.posts limit:5 %}
-  <li>
-    <header class="entry-title">
-      <h2>
-        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      </h2>
-      <p class="oneliner">{{ post.summary }}</p>
-    </header>
-  </li>
-  {% endfor %}
-</ul>
+{% assign page = site.posts.first %}
+
+<article id="entry">
+
+  <header class="entry-title">
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <section>
+    {{ page.content }}
+  </section>
+
+</article>

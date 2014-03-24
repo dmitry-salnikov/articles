@@ -1,18 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700);
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Merriweather', serif;
   background-color: #fff;
   font-weight: 400;
   text-align: left;
   margin: auto;
-  font-size: 15px;
+  font-size: 18px;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   body {
     font-size: 0.8em;
   }
@@ -46,12 +47,12 @@ a img {
 }
 
 #cover_wrap {
-  width: 623px;
+  width: 720px;
   margin: auto;
   line-height: 1;
   border-bottom: 1px solid #e8ebf2;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   #cover_wrap {
     width: 90%;
   }
@@ -101,14 +102,14 @@ a img {
 }
 
 #footer {
-  width: 623px;
+  width: 720px;
   margin: auto;
   border-top: 1px solid #e8ebf2;
   box-shadow: inset 0 1px 0 #fff;
   background: #fdfdfd;
   display: block;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   #footer {
     width: 90%;
   }
@@ -154,16 +155,16 @@ figure {
   font-size: 110%;
 }
 #site section {
-  width: 623px;
+  width: 720px;
   margin: auto;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   #site section {
     width: 90%;
   }
 }
 #site .post-listing {
-  width: 623px;
+  width: 720px;
   margin: auto;
   padding-left: 0px;
   display: block;
@@ -171,7 +172,7 @@ figure {
   list-style-position: outside;
   margin-bottom: 1em;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   #site .post-listing {
     width: 90%;
   }
@@ -221,15 +222,15 @@ figure {
 #site #entry {
   padding: 0;
   margin: 0 auto;
-  font-weight: 300;
+  font-weight: 400;
   color: #222;
 }
 #site #entry .entry-title {
-  width: 623px;
+  width: 720px;
   margin: 15px auto;
   font-size: 100%;
 }
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 46em) {
   #site #entry .entry-title {
     width: 90%;
   }
@@ -260,7 +261,7 @@ figure {
   color: #666;
 }
 #site #entry pre {
-  font-size: 13px;
+  font-size: 18px;
   font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
