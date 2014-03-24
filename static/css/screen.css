@@ -245,8 +245,8 @@ figure {
   font-size: 100%;
 }
 #site #entry a {
+  transition: color 0.25s ease-in;
   font-weight: 600;
-  text-decoration: underline;
   color: #4c6296;
 }
 #site #entry a:visited {
