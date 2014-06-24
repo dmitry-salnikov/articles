@@ -8,4 +8,7 @@ server: clean
 	bundle exec jekyll server --port 3001 --watch --drafts
 
 publish: build
-	s3_website push
+	rsync -chavzOP --stats _site/ /data/www/lumberjaph.net/
+
+deps:
+	bundle install
