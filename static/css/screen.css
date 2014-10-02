@@ -1,17 +1,15 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:400,600,700);
-
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
 
 body {
-  font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
   background-color: #fff;
   font-weight: 400;
   text-align: left;
   margin: auto;
-  font-size: 14px/18px;
 }
 @media only screen and (max-width: 46em) {
   body {
@@ -262,7 +260,7 @@ figure {
 }
 #site #entry pre {
   font-size: 18px;
-  font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
+  font-family: Menlo, monospace;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
   background-color: #fff;
@@ -283,7 +281,7 @@ figure {
   background-color: #eee;
   font-weight: 400;
   font-size: 90%;
-  font-family: Consolas,"Andale Mono",Monaco,Courier,"Courier New",Verdana,sans-serif;
+  font-family: Menlo, monospace;
 }
 #site #entry .highlight {
   margin: 1.5em 0;

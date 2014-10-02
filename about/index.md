@@ -19,7 +19,7 @@ At the moment I'm especially interested in functional programming and operating 
 
 <section>
 
-I'm on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). You can email me at [franckcuny@gmail.com](mailto:franck.cuny@gmail.com), and if you rather wish to contact me privately, please use my [PGP key](/about/franckcuny-pubkey.gpg) (1162893A).
+I'm on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). You can email me at [franckcuny@gmail.com](mailto:franckcuny@gmail.com).
 
 I'm a proud member of [Paris.pm](http://paris).
 
