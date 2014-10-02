@@ -23,6 +23,6 @@ I'm on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com
 
 I'm a proud member of [Paris.pm](http://paris).
 
-If not otherwise noted the content found here is licensed under a [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/).
+If not otherwise noted the content found here is licensed under a [Creative Commons Attribution-ShareAlike 3.0 License](http://creativecommons.org/licenses/by-sa/3.0/), and code is licensed under a [BSD license](/license.txt).
 
 </section>
