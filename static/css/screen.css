@@ -147,7 +147,8 @@ figure {
 
 #site {
   margin: auto;
-  text-align: left;
+  text-align: justify;
+  text-justify: inter-word;
   line-height: 1.65;
   font-weight: 400;
   font-size: 110%;
