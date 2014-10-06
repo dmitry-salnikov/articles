@@ -62,11 +62,11 @@ To install the Cursive plugin, you need to go to [this page](http://cursivecloju
 
 I can now open a project in Intellij and start coding. I've configured my project to use a remote REPL. 
 
-![remote nrepl](/static/imgs/remote-nrepl.png)
+![remote nrepl](/static/imgs/remote-nrepl.webp)
 
 Now I can connect to the remote REPL and do a quick test to see if it works:
 
-![test remote nrepl](/static/imgs/test-remote-nrepl.png)
+![test remote nrepl](/static/imgs/test-remote-nrepl.webp)
 
 Great! It's time to start the web server to serve our static files and see if I can connect the browser-repl to it too. Running the following code in the REPL should do the trick:
 
@@ -83,7 +83,7 @@ If I want to test something, all I have to do is to load the file into the REPL 
 
 and see the output in my browser's console!
 
-![it works!](/static/imgs/nrepl-it-works.png)
+![it works!](/static/imgs/nrepl-it-works.webp)
 
 When working on the project, I can run evaluate the file or a form and send it to the browser. Again, this would be the same with Emacs, instead of having CIDER to use a local nREPL session, you'll just connect to a remote one.
 

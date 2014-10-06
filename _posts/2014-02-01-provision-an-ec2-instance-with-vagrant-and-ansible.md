@@ -84,7 +84,7 @@ As we can see, everything went well, and the application `htop` was successfully
 </section>
 
 <figure>
-<img alt="provisioning" src="/static/imgs/vagrant-ansible-ec2.jpg" Width="100%" height="100%" class='portrait' align='center'>
+<img alt="provisioning" src="/static/imgs/vagrant-ansible-ec2.webp" Width="100%" height="100%" class='portrait' align='center'>
 </figure>
 
 <section>

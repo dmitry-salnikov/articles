@@ -34,7 +34,7 @@ The last one is for writing directly your log message via <ah href="http://searc
 
 To debug your application with Plack, you can use the awesome <a href="http://search.cpan.org/perldoc?Plack::Middleware::Debug">Plack::Middleware::Debug</a>. I've writen <a href="http://git.lumberjaph.net/p5-dancer-debug.git/">Dancer::Debug</a> (which requires my fork of <a href="http://github.com/franckcuny/Plack-Middleware-Debug">P::M::Debug</a>), a middleware that add panels, with specific informations for Dancer applications.
 
-<img src="/static/imgs/4535496880_37e5e68a57_z.jpg"alt="Dancer::Debug middleware" />
+<img src="/static/imgs/4535496880_37e5e68a57_z.webp" alt="Dancer::Debug middleware" />
 
 To activate this middleware, update your app.psgi to make it look like this:
 

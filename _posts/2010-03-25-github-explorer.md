@@ -16,9 +16,9 @@ I wanted to do something similar again, but not with the same data. So I took a 
 
 > This graph will be printed on a poster, size will be [A2](http://en.wikipedia.org/wiki/A2_paper_size) and [A1](http://en.wikipedia.org/wiki/A1_paper_size). Please, contact me franck.cuny [at] linkfluence.net if you will be interested by one.
 
-<img class="img_center" src="/static/imgs/general.png" title="github explorer global" />
+<img class="img_center" src="/static/imgs/general.webp" title="github explorer global" />
 
-<img class="img_center" src="/static/imgs/zoom.png" title="github explorer zoom" />
+<img class="img_center" src="/static/imgs/zoom.webp" title="github explorer zoom" />
 
 This time, I didn't aim for the Perl community only, but the whole github communities. I've created several graphs:
 

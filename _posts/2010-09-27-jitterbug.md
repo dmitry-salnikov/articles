@@ -24,7 +24,7 @@ That's when I decided to write an interface to this: [jitterbug](https://github.
 
 [You can check Dancer's version](http://jitterbug.perldancer.org/). The interface is really simple: there's a list of repositories, the status of the last build, and a link to a list of all the project's builds.
 
-<center>!/static/imgs/jitterbug.png(jitterbug)!</center>
+<center>!/static/imgs/jitterbug.webp(jitterbug)!</center>
 
 ## How it works
 

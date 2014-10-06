@@ -6,7 +6,7 @@ summary: In which I wrote a module to visualize routes in Catalyst.
 
 This morning I saw [this post](http://marcus.nordaaker.com/awesome-route-graph-with-mojoxroutesasgraph/) from Marcus Ramberg about [MojoX::Routes::AsGraph](http://search.cpan.org/perldoc?MojoX::Routes::AsGraph). I liked the idea. But as I Catalyst instead of Mojo, I thought I could give a try and do the same thing for Catalyst dispatcher, and I've coded CatalystX::Dispatcher::AsGraph. For the moment only private actions are graphed.
 
-<img src='/static/imgs/routes-300x249.png' alt='routes'>
+<img src='/static/imgs/routes-300x249.webp' alt='routes'>
 
 You use it like this: `perl bin/catalyst_graph_dispatcher.pl --appname Arkham --output routes.png`
 

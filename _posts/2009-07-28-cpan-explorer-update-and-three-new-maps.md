@@ -8,7 +8,7 @@ The site [cpan-explorer](http://cpan-explorer.org/) have been update with three 
 
 ## distributions map
 
-<img src='/static/imgs/moosedist.png' alt='moose'>
+<img src='/static/imgs/moosedist.webp' alt='moose'>
 
 Task::Kensho acted as the seed for this map. Task::Kensho contains a list of modules recommended to do modern Perl development. So we extracted the modules that have a dependancie toward one of these modules, and create the graph with this data.
 

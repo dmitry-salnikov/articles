@@ -57,7 +57,7 @@ point your browser to http://localhost:5000, activate the javascript console.
 
 If this works correctly, you should have a smiliar output in your console:
 
-<img src="/static/imgs/plack_chrome.png" />
+<img src="/static/imgs/plack_chrome.webp" />
 
 ## Dancer
 
