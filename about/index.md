@@ -13,7 +13,7 @@ At the moment I'm especially interested in functional programming and operating 
 
 <figure>
 <a href="http://www.flickr.com/photos/rgarciasuarez74/5876329422/">
-<img alt="me, photo by Rafaël Garcia-Suarez" src="/static/imgs/5876329422_32040b7f40_b.jpg" Width="100%" height="100%" class='portrait' align='center'>
+<img alt="me, photo by Rafaël Garcia-Suarez" src="/static/imgs/5876329422_32040b7f40_b.webp" Width="100%" height="100%" class='portrait' align='center'>
 </a>
 </figure>
 
