@@ -1,3 +1,17 @@
+PNGS=$(shell find static -name "*.png")
+JPGS=$(shell find static -name "*.jpg")
+
+PNG2WEBP := $(patsubst %.png,%.webp,$(PNGS))
+JPG2WEBP := $(patsubst %.jpg,%.webp,$(JPGS))
+
+images: $(PNG2WEBP) $(JPG2WEBP)
+
+%.webp: %.png
+	cwebp -q 100 "$<" -o "$@"
+
+%.webp: %.jpg
+	cwebp -q 100 "$<" -o "$@"
+
 build: clean
 	bundle exec jekyll build
 
@@ -7,7 +21,7 @@ clean:
 server: clean
 	bundle exec jekyll server --port 3001 --watch --drafts
 
-publish: build
+publish: build images
 	rsync -chavzOP --stats _site/ /srv/www/lumberjaph.net/
 
 deps:
