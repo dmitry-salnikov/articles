@@ -259,15 +259,18 @@ figure {
   color: #666;
 }
 #site #entry pre {
-  font-size: 18px;
   font-family: Menlo, monospace;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
-  background-color: #fff;
+  background-color: #E9E9E9;
   border: 1px solid #d1d8e3;
   padding: .35em;
   overflow: auto;
   overflow-y: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 #site #entry pre::-webkit-scrollbar {
   height: 12px;
@@ -275,13 +278,12 @@ figure {
   border-top: 1px solid #d1d8e3;
 }
 #site #entry .highlight code {
-  font-size: 95%;
 }
 #site #entry p code, #site #entry li code {
-  background-color: #eee;
+  background-color: #E9E9E9;;
   font-weight: 400;
-  font-size: 90%;
   font-family: Menlo, monospace;
+  font-size: 14px;
 }
 #site #entry .highlight {
   margin: 1.5em 0;
