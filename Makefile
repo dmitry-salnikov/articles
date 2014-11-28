@@ -22,7 +22,7 @@ server: clean
 	bundle exec jekyll server --port 3001 --watch --drafts
 
 publish: build images
-	rsync -chavzOP --stats _site/ /srv/www/lumberjaph.net/
+	rsync -chavzOP --stats _site/ 104.236.175.223:/srv/www/lumberjaph.net/
 
 deps:
-	bundle install
+	bundle install --path vendor/bundle
