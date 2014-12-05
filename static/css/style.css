@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Cabin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Cabin Regular'), local('Cabin-Regular'), url('cabin.ttf') format('truetype');
+}
+
+* {
+    font-family: 'Cabin', "Book Antiqua", "URW Palladio L", sans-serif;
+}
+
+body {
+    padding: 1.5em 0;
+}
+
+div#container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 1.5em 0 1.5em 3em;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+.archives h2 h3 h4 {
+  font-family: HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+}
+
+blockquote {
+  background-color: #eee;
+  margin: 1em;
+  padding: 0.3em 1em;
+}
+
+#entry, #wrapper {
+  font-size: 15pt;
+}
+
+#entry img {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+#entry img.right {
+  float: right;
+  margin-left: 1em;
+}
+
+#entry, #entries, #wrapper, #resume {
+  width: 40em;
+  margin-left: 5em;
+  text-align: justify;
+  line-height: 1.5em;
+}
+
+#entries li {
+  margin: 0.5em;
+}
+
+.footnotes {
+  font-size: 88%;
+  border-top: 1px solid grey;
+}
+
+ul.spaced li {
+  margin-bottom: 1.5em;
+}
+
+#footer {
+  margin: 2em 0 8em 2em;
+}
+
+#footer p {
+  text-align: center;
+}
+
+#footer img {
+  border: 0;
+}
+
+img.portrait {
+  margin-top: -3em;
+  margin-left: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: #31674b;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #11472b;
+}
+
+a img { border: 0; }
+
+a.older, a.newer {
+  size: 80%;
+}
+
+pre {
+  font-family: Menlo, monospace;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+  background: #eee;
+  border: 1px solid #d1d8e3;
+  padding: .35em;
+  overflow: auto;
+  overflow-y: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  line-height: 1;
+}
+
+code {
+  background: #eee;
+  font-family: Menlo, monospace;
+  font-size: 14px;
+}
+
+.timestamp {
+  text-align: right;
+  color: grey;
+}
+
+#resume h3 { margin-left: -1em; }
+#resume dt { font-style: italic; }
+
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 0.8em;
+  }
+  div#container {
+    width: 90%;
+    padding: 
+  }
+  #entry, #entries, #wrapper, #resume {
+    width: 90%;
+    margin-left: 0.2em;
+    text-align: justify;
+  }
+  h1 {
+    margin-left: 0em;
+  }
+}
+
+/* htmlize styles for code snippets */
+.highlight { margin: 1.5em 0; }
+.highlight .hll { background-color: #ffffcc }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #bb8844 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #999999 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #bb8844 } /* Literal.String.Backtick */
+.highlight .sc { color: #bb8844 } /* Literal.String.Char */
+.highlight .sd { color: #bb8844 } /* Literal.String.Doc */
+.highlight .s2 { color: #bb8844 } /* Literal.String.Double */
+.highlight .se { color: #bb8844 } /* Literal.String.Escape */
+.highlight .sh { color: #bb8844 } /* Literal.String.Heredoc */
+.highlight .si { color: #bb8844 } /* Literal.String.Interpol */
+.highlight .sx { color: #bb8844 } /* Literal.String.Other */
+.highlight .sr { color: #808000 } /* Literal.String.Regex */
+.highlight .s1 { color: #bb8844 } /* Literal.String.Single */
+.highlight .ss { color: #bb8844 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */

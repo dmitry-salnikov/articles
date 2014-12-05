@@ -1,17 +1,30 @@
 ---
 layout: default
+title: lumberjaph.net
 ---
 
-{% assign page = site.posts.first %}
+<center><h1><a href="{{ root_url }}/">lumberjaph.net</a></h1></center>
 
-<article id="entry">
+{% for post in site.posts reverse limit:10 %}
 
-  <header class="entry-title">
-    <h1><a href={{ page.url }}>{{ page.title }}</a></h1>
-  </header>
+  {% capture date %}{{ post.date }}{% endcapture %}
+  {% capture this_year %}{{ date | date: "%Y" }}{% endcapture %}
 
-  <section>
-    {{ page.content }}
-  </section>
+  {% unless year == this_year %}
+    {% assign year = this_year %}
+    {% unless forloop.first %}
+      </section>
+    {% endunless %}
+    <section class="archives"><h2>{{ date | date: "%Y" }}</h2>
+  {% endunless %}
 
-</article>
+  <article>
+    <h3><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h3>
+    <div class="meta">
+      <span class="date">{{ date | date: "%b %e " }}</span>
+    </div>
+  </article>
+
+{% endfor %}
+
+{% include footer.html %}
