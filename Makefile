@@ -6,10 +6,7 @@ JPG2WEBP := $(patsubst %.jpg,%.webp,$(JPGS))
 
 images: $(PNG2WEBP) $(JPG2WEBP)
 
-%.webp: %.png
-	cwebp -q 100 "$<" -o "$@"
-
-%.webp: %.jpg
+%.webp: %.png %.jpg
 	cwebp -q 100 "$<" -o "$@"
 
 build: clean
