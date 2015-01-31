@@ -50,9 +50,11 @@ But there's also the good stuff!
 
 The hardware is attractive. It’s really small (smaller than the MBPr 13”, but probably a little bit
 bigger than the MBA 11”). It’s light. There’s 2 USB ports, 1 SD card (that’s one of the reason I
-went with this model instead of the carbon x1).  My main complaint is the 8GB limit, I would have
-prefered 16GB. Not having a broadcom wireless card would have also been nice (maybe they will change
-this for the developer edition ?). But (and that's the main difference with Apple :), there's a
+went with this model instead of the carbon x1).
+
+My main complaint is the 8GB limit, I would have prefered 16GB. Not having a broadcom
+wireless card would have also been nice (maybe they will change this for the developer edition ?).
+But (and that's the main difference with Apple :), there's a
 [smanual](ftp://ftp.dell.com/Manuals/all-products/esuprt_laptop/esuprt_xps_laptop//xps-13-9343-laptop_Service%20Manual_en-us.pdf)
 and instructions on how to replace the wireless card. The good alternaties seems to be the [Intel
 7260](http://www.amazon.com/gp/product/B00MY9S692/) (I might replace the card).
