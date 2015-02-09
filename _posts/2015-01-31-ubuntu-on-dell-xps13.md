@@ -55,12 +55,17 @@ went with this model instead of the carbon x1).
 My main complaint is the 8GB limit, I would have prefered 16GB. Not having a broadcom
 wireless card would have also been nice (maybe they will change this for the developer edition ?).
 But (and that's the main difference with Apple :), there's a
-[smanual](ftp://ftp.dell.com/Manuals/all-products/esuprt_laptop/esuprt_xps_laptop//xps-13-9343-laptop_Service%20Manual_en-us.pdf)
+[manual](ftp://ftp.dell.com/Manuals/all-products/esuprt_laptop/esuprt_xps_laptop//xps-13-9343-laptop_Service%20Manual_en-us.pdf)
 and instructions on how to replace the wireless card. The good alternaties seems to be the [Intel
-7260](http://www.amazon.com/gp/product/B00MY9S692/) (I might replace the card).
+7260ngw](http://www.amazon.com/gp/product/B00GUNZUG0/) (I might replace the card).
 
 For the curious, here’s the output of [dmesg](/files/dell-xps-2015-dmesg.txt) and
 [lspci](/files/dell-xps-2015-lspci.txt).
 
-I’ll update this page with more details / information in the next few weeks (I'm currently on a
-3.16, I'll try the 3.18 during the weekend).
+I’ll update this page with more details / information in the next few weeks (I'm currently on a 3.16, I'll try the 3.18 during the weekend).
+
+*Updates*
+
+* I've replaced the wireless card with the Intel 7260ngw. Opening the laptop is
+  easy, but replacing the card was not that easy. Fixing the antenna is kind of
+  a pain. However, the quality of the signal is way better now.
