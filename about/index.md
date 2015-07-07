@@ -1,17 +1,9 @@
 ---
 layout: static
-title: Hello!
+title: about
 ---
 
-I'm a French guy who moved to the Bay Area in 2011. I work as a Site Reliability Engineer at [Twitter](https://twitter.com.com).
-
-At the moment I'm especially interested in functional programming and operating system.
-
-<figure>
-<a href="http://www.flickr.com/photos/rgarciasuarez74/5876329422/">
-  <img alt="me, photo by Rafaël Garcia-Suarez" src="/static/imgs/5876329422_32040b7f40_b.webp" Width="100%" height="100%">
-</a>
-</figure>
+I'm a Site Reliability Engineer, living in Berkeley and working at [Twitter](https://twitter.com). At the moment I'm especially interested in functional programming and operating system.
 
 I'm on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). You can email me at [franckcuny@gmail.com](mailto:franckcuny@gmail.com).
 

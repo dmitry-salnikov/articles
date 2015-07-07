@@ -18,14 +18,7 @@ My goal with this article is to show how easy you can combine Vagrant with Ansib
 
 I have a private repository with all my rules for Ansible. But for this post, all we need is a simple playbook. So let's start by creating a directory named *vagrant*, and put inside a configuration file named *playbook.yml*, with the following content:
 
-```yaml
--
-  hosts: all
-  sudo: yes
-  tasks:
-    - name: Install htop
-      apt: pkg=htop state=installed
-```
+<script src="https://gist.github.com/franckcuny/fae46135ad0f3581ce6b.js"></script>
 
 What we're describing, is that for all the hosts in our inventory we will use `sudo` to install the program `htop` using `apt-get` (yes, I assume you're using a debian-based system, but you get the idea).
 
@@ -33,61 +26,15 @@ First, we will try the setup on a local box. If you don't already have a Vagrant
 
 Now we can add the configuration file named *Vagrantfile* with this content.
 
-```ruby
-Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
-
-  config.ssh.forward_agent = true
-  config.vm.provision :ansible, :playbook => "playbook.yml"
-end
-```
+<script src="https://gist.github.com/franckcuny/aadd788101c08744a22a.js"></script>
 
 This file says that we will use the box named *precise64*, located at the given URL, and we want to provision it using Ansible, and the path to the playbook.
 
 By running `vagrant up`, a box gets started and provisioned. An inventory file is generated for us inside the directory, so ansible will know what to do. The output should be similar to this:
 
-```
-Bringing machine 'default' up with 'virtualbox' provider...
-[default] Importing base box 'precise64'...
-[default] Matching MAC address for NAT networking...
-[default] Setting the name of the VM...
-[default] Clearing any previously set forwarded ports...
-[default] Clearing any previously set network interfaces...
-[default] Preparing network interfaces based on configuration...
-[default] Forwarding ports...
-[default] -- 22 => 2222 (adapter 1)
-[default] Booting VM...
-[default] Waiting for machine to boot. This may take a few minutes...
-[default] Machine booted and ready!
-[default] Mounting shared folders...
-[default] -- /vagrant
-[default] Running provisioner: ansible...
-
-PLAY [all] ********************************************************************
-
-GATHERING FACTS ***************************************************************
-The authenticity of host '[127.0.0.1]:2222 ([127.0.0.1]:2222)' can't be established.
-RSA key fingerprint is 50:db:75:ba:11:2f:43:c9:ab:14:40:6d:7f:a1:ee:e3.
-Are you sure you want to continue connecting (yes/no)? yes
-ok: [default]
-
-TASK: [Install htop] **********************************************************
-changed: [default]
-
-PLAY RECAP ********************************************************************
-default                    : ok=2    changed=1    unreachable=0    failed=0
-```
+<script src="https://gist.github.com/franckcuny/e3df9a2424e4a4a12f60.js"></script>
 
 As we can see, everything went well, and the application `htop` was successfully installed. We can now run `vagrant ssh` and once logged inside the VM, run `htop`.
-
-</section>
-
-<figure>
-<img alt="provisioning" src="/static/imgs/vagrant-ansible-ec2.webp" Width="100%" height="100%" class='portrait' align='center'>
-</figure>
-
-<section>
 
 ## AWS
 
@@ -95,32 +42,7 @@ I've created a key pair for Vagrant in the AWS console. Note the access and secr
 
 We need to install a plugin for that: `vagrant plugin install vagrant-aws`. We also need to modify our *Vagrantfile* to use a different box, and also add the configuration for AWS.
 
-```ruby
-Vagrant.configure("2") do |config|
-  config.vm.provision :ansible, :playbook => 'playbook.yml'
-
-  # This configuration is for our local box, when we use virtualbox as the provider
-  config.vm.provider :virtualbox do |vb, override|
-    override.vm.box = "precise64"
-    override.vm.box_url = "http://files.vagrantup.com/precise64.box"
-  end
-
-  # This configuration is for our EC2 instance
-  config.vm.provider :aws do |aws, override|
-    aws.access_key_id = "access key"
-    aws.secret_access_key = "secret access key"
-    # ubuntu AMI
-    aws.ami = "ami-e7582d8e"
-    aws.keypair_name = "vagrant"
-    aws.security_groups = ["default", "quicklaunch-1"]
-
-    override.vm.box = "dummy"
-    override.vm.box_url = "https://github.com/mitchellh/vagrant-aws/raw/master/dummy.box"
-    override.ssh.username = "ubuntu"
-    override.ssh.private_key_path = "vagrant.pem"
-  end
-end
-```
+<script src="https://gist.github.com/franckcuny/ac8cad84af5f51a923f6.js"></script>
 
 We need to override the user name to *ubuntu* and specify the path to the private key (the one we got from the AWS console when we created our new key pair) to log into the instance. The box also needs to be overridden.
 

@@ -26,19 +26,7 @@ Sadly, there's still a few issues so far with Ubuntu 14.10:
   and there's some kind of issues where it get lost. But I think this is fixed with newer kernel
   (need to test).
 
-```sh
-mp saved to /sys/class/drm/card0/error
-[ 1835.632679] [drm] Enabling RC6 states: RC6 on, RC6p off, RC6pp off
-[ 1868.702435] psmouse serio1: TouchPad at isa0060/serio1/input0 lost synchronization, throwing 1
-bytes away.
-[ 1869.211965] psmouse serio1: resync failed, issuing reconnect request
-[ 1876.689924] psmouse serio1: TouchPad at isa0060/serio1/input0 lost synchronization, throwing 1
-bytes away.
-[ 1877.198899] psmouse serio1: resync failed, issuing reconnect request
-[ 1879.545191] psmouse serio1: TouchPad at isa0060/serio1/input0 lost sync at byte 4
-[ 1879.546318] psmouse serio1: TouchPad at isa0060/serio1/input0 lost sync at byte 1
-[ 1879.558431] psmouse serio1: TouchPad at isa0060/serio1/input0 - driver resynced.
-```
+<script src="https://gist.github.com/franckcuny/70b6959eef1892d00197.js"></script>
 
 But there's also the good stuff!
 
@@ -59,8 +47,9 @@ But (and that's the main difference with Apple :), there's a
 and instructions on how to replace the wireless card. The good alternaties seems to be the [Intel
 7260ngw](http://www.amazon.com/gp/product/B00GUNZUG0/) (I might replace the card).
 
-For the curious, here’s the output of [dmesg](/files/dell-xps-2015-dmesg.txt) and
-[lspci](/files/dell-xps-2015-lspci.txt).
+For the curious, here’s the output of
+[dmesg](https://gist.github.com/franckcuny/02da991e4b4c6bcaabef) and
+[lspci](https://gist.github.com/franckcuny/bc9a486dc17e8c9acef1).
 
 I’ll update this page with more details / information in the next few weeks (I'm currently on a 3.16, I'll try the 3.18 during the weekend).
 
