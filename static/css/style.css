@@ -1,57 +1,42 @@
-* {
-    font-family: 'verdana', 'helvetica', 'arial', 'sans-serif';
+html {
+   font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
 }
 
 body {
-    padding: 1.5em 0;
+  font-size: 16px;
 }
 
-div#container {
-    width: 900px;
-    margin: 0 auto;
-}
-
-h1 {
-    margin: 1.5em 0 1.5em 0;
-}
-
-h1 a {
-    text-decoration: none;
-}
-
-blockquote {
-  background-color: #eee;
-  margin: 1em;
-  padding: 0.3em 1em;
-}
-
-#entry, #wrapper {
-  font-size: 13pt;
-}
-
-#entry img {
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-
-#entry img.right {
-  float: right;
-  margin-left: 1em;
-}
-
-#entry, #entries, #wrapper, #resume {
-  width: 90%;
+#container {
+  width: 800px;
+  margin: 0 auto;
   text-align: justify;
   line-height: 1.5em;
 }
 
-#entries li {
-  margin: 0.5em;
+#container img {
+  width: 100%;
 }
 
-.footnotes {
-  font-size: 88%;
-  border-top: 1px solid grey;
+h1, h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  padding-bottom: 6px;
+}
+
+h1, h2 a {
+  text-decoration: none;
+}
+
+blockquote {
+  box-sizing: border-box;
+  display: block;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  background-color: #f7f7f7;
 }
 
 ul.spaced li {
@@ -59,8 +44,14 @@ ul.spaced li {
 }
 
 #footer p {
+  width: 800px;
+  margin: 0 auto;
   margin-top: 2em;
-  text-align: justify;
+  text-align: center;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #footer img {
@@ -74,12 +65,11 @@ img.portrait {
 
 a {
   text-decoration: none;
-  color: #31674b;
+  color: #4078c0;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #11472b;
 }
 
 a img { border: 0; }
@@ -89,7 +79,7 @@ a.older, a.newer {
 }
 
 pre {
-  font-family: Menlo, monospace;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
   background: #eee;
@@ -106,17 +96,16 @@ pre {
 
 code {
   background: #eee;
-  font-family: Menlo, monospace;
-  font-size: 14px;
+  font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  font-size: 85%;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-sizing: border-box;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
-
-.timestamp {
-  text-align: right;
-  color: grey;
-}
-
-#resume h3 { margin-left: -1em; }
-#resume dt { font-style: italic; }
 
 @media only screen and (max-width: 960px) {
   body {
@@ -125,12 +114,9 @@ code {
   div#container {
     width: 90%;
   }
-  #entry, #entries, #wrapper, #resume {
+  #entry {
     width: 90%;
     margin-left: 0.2em;
     text-align: justify;
-  }
-  h1 {
-    margin-left: 0em;
   }
 }
