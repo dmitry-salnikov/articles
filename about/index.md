@@ -3,6 +3,8 @@ title: about
 layout: default
 ---
 
+# about
+
 I'm a Site Reliability Engineer, living in Berkeley and working at [Twitter](https://twitter.com). At the moment I'm especially interested in functional programming and operating system.
 
 I'm on [Twitter](https://twitter.com/franckcuny) and [GitHub](https://github.com/franckcuny). You can email me at [franckcuny@gmail.com](mailto:franckcuny@gmail.com).
