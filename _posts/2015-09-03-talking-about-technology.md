@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Talking about technology at conferences or meet-up.
-summary: In which I particularly enjoyed a talk from MesosCon and hope to see more like this one
+summary: In which I particularly enjoyed a talk from MesosCon, and hope to see more like this one
 ---
 
 I'm more and more annoyed by how the tech community is super enthusiastic about new pieces of
