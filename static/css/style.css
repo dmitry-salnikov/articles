@@ -46,7 +46,7 @@ ul.spaced li {
 }
 
 #footer p {
-  width: 800px;
+  width: 720px;
   margin: 0 auto;
   margin-top: 2em;
   text-align: center;
@@ -121,5 +121,11 @@ code {
     width: 90%;
     margin-left: 0.2em;
     text-align: justify;
+  }
+  div#footer {
+    width: 90%;
+  }
+  #footer p {
+    width: 90%;
   }
 }
