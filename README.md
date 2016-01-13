@@ -1,4 +1,4 @@
-# lumberjaph.net
+# franckcuny.github.io
 
 ## Setup
 
@@ -20,4 +20,4 @@ of useful commands:
 
 ## Publish
 
-Just run `git push`.
+Start by running `make test` to check that everything is fine. Then run `git push`.

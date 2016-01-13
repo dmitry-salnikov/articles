@@ -9,3 +9,6 @@ server: clean
 
 deps:
 	bundle install --path vendor/bundle
+
+test: build
+	bundle exec htmlproof ./_site --only-4xx --check-html --disable-external
