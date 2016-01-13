@@ -1,5 +1,7 @@
 # franckcuny.github.io
 
+[![Build Status](https://travis-ci.org/franckcuny/franckcuny.github.io.svg?branch=master)](https://travis-ci.org/franckcuny/franckcuny.github.io)
+
 ## Setup
 
 Ruby's [bundler](http://bundler.io/) is required to set up the blog. Follow the instructions:
