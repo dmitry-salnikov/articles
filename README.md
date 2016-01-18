@@ -1,6 +1,6 @@
-# franckcuny.github.io
+# lumberjaph.net
 
-[![Build Status](https://travis-ci.org/franckcuny/franckcuny.github.io.svg?branch=master)](https://travis-ci.org/franckcuny/franckcuny.github.io)
+[![Build Status](https://travis-ci.org/franckcuny/lumberjaph.net.svg?branch=master)](https://travis-ci.org/franckcuny/lumberjaph.net)
 
 ## Setup
 
@@ -22,4 +22,4 @@ of useful commands:
 
 ## Publish
 
-Start by running `make test` to check that everything is fine. Then run `git push`.
+Run `make publish`.

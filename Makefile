@@ -12,3 +12,9 @@ deps:
 
 test: build
 	bundle exec htmlproof ./_site --only-4xx --check-html --disable-external
+
+publish: deps build
+	gsutil -m rsync -R _site/  gs://b.lumberjaph.net
+	gsutil -m acl ch -u AllUsers:R -R gs://b.lumberjaph.net/
+	gsutil -m web set -m index.html -e 404.html gs://b.lumberjaph.net
+
