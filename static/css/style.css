@@ -1,17 +1,16 @@
 html {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lora', serif;
 }
 
 body {
     font-size: 18px;
-    color: #101c32;
 }
 
 #container {
-    width: 45em;
+    width: 40em;
     margin: 0 auto;
     text-align: justify;
-    line-height: 1.5em;
+    line-height: 1.85em;
 }
 
 #container img {
@@ -19,14 +18,14 @@ body {
 }
 
 h1, h2 {
-    border-bottom: 2px solid #cfdaf0;
     border-left: 6px solid #cfdaf0;
-    font: 30px/34px 'DejaVuSerifCondensed-Bold', Arial, sans-serif;
     letter-spacing: 0;
     margin-bottom: 16px;
     margin-top: 20px;
     padding-bottom: 6px;
     padding-left: 14px;
+    font-weight: 700;
+    letter-spacing: -.02em;
 }
 
 a {
@@ -62,14 +61,11 @@ ul.spaced li {
 }
 
 #footer p {
-  width: 45em;
-  margin: 0 auto;
   margin-top: 2em;
-  text-align: center;
+  text-align: left;
   border-top: 4px solid #e0ebf5;
-  margin-top: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  margin-top: 20px;
+  padding-top: 10px;
 }
 
 #footer a {
@@ -83,7 +79,7 @@ img.portrait {
 }
 
 pre {
-  font-family: Inconsolata, monospace;
+  font-family: 'Roboto Mono', monospace;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
   background-color: #fafafa;
@@ -112,6 +108,26 @@ code {
   padding-bottom: 0.2em;
 }
 
+ul.articles {
+    list-style-type: none;
+}
+
+ul.articles li {
+    line-height: 1.75em;
+    text-align: left;
+}
+
+li.article {
+    display: list-item;
+}
+
+.article-date {
+    font-size: 90%;
+    font-style: italic;
+    float: left;
+    width: 120px;
+}
+
 @media only screen and (max-width: 960px) {
   body {
     font-size: 0.8em;
@@ -120,14 +136,7 @@ code {
     width: 90%;
   }
   #entry {
-    width: 90%;
     margin-left: 0.2em;
     text-align: justify;
-  }
-  div#footer {
-    width: 90%;
-  }
-  #footer p {
-    width: 90%;
   }
 }

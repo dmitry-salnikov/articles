@@ -1,16 +1,21 @@
 ---
-title: lumberjaph.net
+title: archives
 layout: default
 ---
 
-{% for post in site.posts limit:1 %}
+<p style="font-size: 36px; line-height:46px; font-weight: bold;">
+  Hi! My name is <a href="/about/">Franck Cuny</a> and this is my personal space, welcome!
+</p>
 
-  <header>
-    <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-  </header>
+<ul class="articles">
 
-  <section>
-    <div id="entry"> {{ post.content }} </div>
-  </section>
+{% for post in site.posts reverse %}
+
+  <li class="article">
+    <div class="article-date">{{post.date | date: "%Y.%m.%d"}}</div>
+    <a href="{{ root_url }}{{ post.url}}">{{post.title}}</a>
+  </li>
 
 {% endfor %}
+
+</ul>
