@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 gem 'jekyll'
-gem 'RedCloth'
-gem 'redcarpet'
 gem 'html-proofer'
 gem 'rouge'
+gem 'kramdown'

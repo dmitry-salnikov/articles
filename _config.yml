@@ -1,15 +1,8 @@
 permalink: /:title/
 highlighter: rouge
-markdown: redcarpet
+markdown: kramdown
 name: lumberjaph.net
 future: false
-redcarpet:
-  extensions:
-    - no_intra_emphasis
-    - fenced_code_blocks
-    - autolink
-    - strikethrough
-    - superscript
 exclude:
   - CNAME
   - vendor
