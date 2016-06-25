@@ -23,5 +23,5 @@ so if you are interested in buying a poster and contact me early enough, I'll pr
 I would like to thank all the people who emailed me, and I'm really sorry I'm unable to provide each of you a poster.
 
 <center>
-<a href="http://fr.linkfluence.net/posters/"><img style="border: 1px solid #000;" src="http://fr.linkfluence.net/wp-content/images/atlas/github_thumb.png" /></a>
+<a href="http://fr.linkfluence.net/posters/"><img style="border: 1px solid #000;" src="http://fr.linkfluence.net/wp-content/images/atlas/github_thumb.png" alt="poster" /></a>
 </center>

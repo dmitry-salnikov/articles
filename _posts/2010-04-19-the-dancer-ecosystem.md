@@ -28,7 +28,7 @@ Out of the box, Dancer only has a simple logging system to write to file, but mo
 <li><a href="http://git.lumberjaph.net/p5-dancer-logger-psgi.git/">Dancer::Logger::PSGI</a> by me</li>
 </ul>
 
-The last one is for writing directly your log message via <ah href="http://search.cpan.org/perldoc?Plack">Plack</a>. You can use a middleware like <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/LogDispatch.pm">P::M::LogDispatch</a> or <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/Log4perl.pm">P::M::Log4perl</a> to handle logs for your application. Even better, if you use <a href="http://github.com/miyagawa/Plack-Middleware-ConsoleLogger">P::M::ConsoleLogger</a>, you can have logs from your Dancer application in your javascript console.
+The last one is for writing directly your log message via <a href="http://search.cpan.org/perldoc?Plack">Plack</a>. You can use a middleware like <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/LogDispatch.pm">P::M::LogDispatch</a> or <a href="http://search.cpan.org/~miyagawa/Plack-0.9932/lib/Plack/Middleware/Log4perl.pm">P::M::Log4perl</a> to handle logs for your application. Even better, if you use <a href="http://github.com/miyagawa/Plack-Middleware-ConsoleLogger">P::M::ConsoleLogger</a>, you can have logs from your Dancer application in your javascript console.
 
 ## Debug
 

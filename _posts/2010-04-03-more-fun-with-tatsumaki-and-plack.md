@@ -1,4 +1,4 @@
----
+    ---
 layout: post
 summary: In which I have fun with Tatsumaki.
 title: More fun with Tatsumaki and Plack
@@ -130,7 +130,7 @@ Some HTTP headers are added to the response :
 * **X-RateLimit-Remaining**: how many requests are available
 * **X-RateLimit-Reset**: when will the counter be reseted (in seconds)
 
-This middleware could be a very good companion to the [Dancer REST stuff](http://www.sukria.net/fr/archives/2010/03/19/let-the-dancer-rest/) [added recently](/easily-create-rest-interface-with-the-dancer-1170/).
+This middleware could be a very good companion to the [Dancer REST stuff](http://www.sukria.net/fr/archives/2010/03/19/let-the-dancer-rest/) [added recently](/easily-create-rest-interface-with-the-dancer-1.170/).
 
 ## another Tatsumaki application with Plack middlewares
 

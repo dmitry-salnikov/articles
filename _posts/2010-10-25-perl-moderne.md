@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Perl Moderne
-summary: In which I do a review of the book "Moderne Perl"
+summary: In which I do a review of the book 'Moderne Perl'
 ---
 Exercice différent aujourd’hui, puisqu’il s’agit d’une critique d’un livre.
 

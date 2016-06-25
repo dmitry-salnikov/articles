@@ -6,7 +6,7 @@ summary: In which we look at how we can use GitHub effectively for your project.
 
 <a href="https://github.com/">GitHub</a> provide an awesome set of tools for opensource developers. For <a href="http://perldancer.org">Dancer</a>, we use them as much as possible. I'll show and explain how we do our development.
 
-<img class="img_center" src="/static/imgs/github_dancer.webp" />
+<img class="img_center" src="/static/imgs/github_dancer.webp" alt="dancer" />
 
 ## code review
 

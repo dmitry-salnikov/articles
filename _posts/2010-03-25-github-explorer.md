@@ -16,9 +16,9 @@ I wanted to do something similar again, but not with the same data. So I took a 
 
 > This graph will be printed on a poster, size will be [A2](http://en.wikipedia.org/wiki/A2_paper_size) and [A1](http://en.wikipedia.org/wiki/A1_paper_size). Please, contact me franck.cuny [at] linkfluence.net if you will be interested by one.
 
-<img class="img_center" src="/static/imgs/general.webp" title="github explorer global" />
+<img class="img_center" src="/static/imgs/general.webp" alt="github explorer global" title="github explorer global" />
 
-<img class="img_center" src="/static/imgs/zoom.webp" title="github explorer zoom" />
+<img alt="github explorer zoom" class="img_center" src="/static/imgs/zoom.webp" title="github explorer zoom" />
 
 This time, I didn't aim for the Perl community only, but the whole github communities. I've created several graphs:
 
@@ -59,7 +59,7 @@ As always, I've used [Gephi](http://gephi.org/) (now in version 0.7) to create t
 
 > properties of the graph: 16443 nodes / 130650 edges
 
-<a href="http://www.flickr.com/photos/franck_/4460144638/" title="Github - All - by languages by franck.cuny, on Flickr"><img class="img_center" src="http://farm5.static.flickr.com/4027/4460144638_48e7d83e80.jpg" width="482" height="500" alt="Github - All - by languages" /></a>
+<a href="http://www.flickr.com/photos/franck_/4460144638/" alt="GitHub - All" title="Github - All - by languages by franck.cuny, on Flickr"><img class="img_center" src="http://farm5.static.flickr.com/4027/4460144638_48e7d83e80.jpg" width="482" height="500" alt="Github - All - by languages" /></a>
 
 The first map is about all the languages available on  github. This one was really heavy, with more than 17k nodes, and 130k edges. The final version of the graph use the 2270 more connected nodes.
 
