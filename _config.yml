@@ -1,5 +1,5 @@
 permalink: /:title/
-pygments: true
+highlighter: rouge
 markdown: redcarpet
 name: lumberjaph.net
 future: false

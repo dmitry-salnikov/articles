@@ -55,6 +55,7 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     redcarpet (2.3.0)
+    rouge (2.0.1)
     safe_yaml (0.7.1)
     thread_safe (0.3.5)
     typhoeus (0.8.0)
@@ -72,3 +73,4 @@ DEPENDENCIES
   html-proofer
   jekyll
   redcarpet
+  rouge
