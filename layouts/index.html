@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+  <html lang="en-US">
+
+  <head>
+    {{ partial "header.html" . }}
+  </head>
+
+  <body>
+
+    <div id="container">
+
+      <p style="font-size: 36px; line-height:46px; font-weight: bold;">
+        Hi! My name is <a href="/about/">Franck Cuny</a> and this is my personal space, welcome!
+      </p>
+
+      <ul class="articles">
+        {{ range where .Data.Pages "Section" "post" }}
+          {{ .Render "title" }}
+        {{ end }}
+      </ul>    
+
+      {{ partial "footer.html" . }}
+
+    </div>
+
+  </body>
+
+</html>

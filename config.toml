@@ -1,0 +1,5 @@
+baseurl = "https://franckcuny.github.io/"
+languageCode = "en-us"
+
+[Permalinks]
+        post = "/:title/"

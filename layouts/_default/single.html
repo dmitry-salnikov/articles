@@ -1,0 +1,17 @@
+{{ partial "base.html" . }}
+
+<div id="container">
+
+  <div>fcuny: <a href="/">home</a></div>
+
+  <header>
+    <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  </header>
+
+  <section>
+    <div id="entry"> {{ .Content }} </div>
+  </section>
+
+
+    {{ partial "base_footer.html" . }}
+
