@@ -31,4 +31,4 @@ publish: build
 
 	git symbolic-ref HEAD refs/heads/master
 	git reset --mixed
-	rm rf $(DEPLOY_DIR)
+	[ -d $(DEPLOY_DIR) ] && rm -rf $(DEPLOY_DIR)
