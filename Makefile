@@ -14,7 +14,7 @@ deps:
 build: clean
 	hugo
 
-DEPLOY_BRANCH := gh-pages
+DEPLOY_BRANCH := master
 DEPLOY_DIR := public
 
 .PHONY: publish
@@ -29,6 +29,6 @@ publish: build
 	  git push origin $(DEPLOY_BRANCH) ; \
 	fi
 
-	git symbolic-ref HEAD refs/heads/master
+	git symbolic-ref HEAD refs/heads/posts
 	git reset --mixed
 	[ -d $(DEPLOY_DIR) ] && rm -rf $(DEPLOY_DIR)
