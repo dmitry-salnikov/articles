@@ -1,0 +1,70 @@
+Earlier this week Google has announced that they will use HTTPS as a
+ranking signal for the [[http://en.wikipedia.org/wiki/Page_rank][Page
+Rank]].
+
+#+BEGIN_HTML
+  <center>
+#+END_HTML
+
+#+BEGIN_HTML
+  <blockquote class="twitter-tweet" lang="en">
+#+END_HTML
+
+#+BEGIN_HTML
+  <p>
+#+END_HTML
+
+HTTPS is now a lightweight ranking signal: http://t.co/hOr1DS9trV.
+Secure those sites! #WebmasterNews pic.twitter.com/qk9v9L8lvR
+
+#+BEGIN_HTML
+  </p>
+#+END_HTML
+
+--- Google Webmasters (@googlewmc) August 7, 2014
+
+#+BEGIN_HTML
+  </blockquote>
+#+END_HTML
+
+#+BEGIN_HTML
+  </center>
+#+END_HTML
+
+#+BEGIN_HTML
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+#+END_HTML
+
+A lot of people on Hacker News and Twitter were annoyed (even upstet for
+some) by that decision. I understand some of the concern, but I don't
+think they are legitimate:
+
+-  Yes, most SSL certs are not free. But hosting a website has also a
+   cost.
+
+-  However, certificates are not always expensive. You can get one for
+   $16 with [[https://www.gandi.net/ssl][Gandi]].
+
+-  Yes, there is probably additional cost. You'll need the technical
+   knowledge on how to set up the certificate. But it's the same for
+   running a web site. If you don't know how to do it, you'll need
+   someone to do it for you.
+
+-  There's an opportunity for hosting companies to compete on this, and
+   make it easier and cheaper for small business and individual to run a
+   web site with TLS.
+
+-  The Page Rank is already secret, no one know how important having TLS
+   will impact the ranking.
+
+-  Yes, it matters even for a "content only" site. How can you trust the
+   content was not altered otherwise ?
+
+-  This decision impact business more than anyone else. If you're
+   worried that your own personal blog is going to be impacted, I don't
+   want to be mean, but I doubt this will have a huge impact for you.
+
+-  Google won't stop ranking you because you don't have TLS.
+
+I really believe this is a first small step in the right direction.
+Plain HTTP should die at this point.

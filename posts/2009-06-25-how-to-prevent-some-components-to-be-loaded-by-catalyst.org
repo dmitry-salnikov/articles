@@ -1,0 +1,28 @@
+Let's say you have a large
+[[http://search.cpan.org/perldoc?Catalyst][Catalyst]] application, with
+a lot of compoments. When you deploy your application, or when you want
+to test it while your developping, you may not want to have some of
+thoses components loaded (you don't have all the dependencies, they are
+incompatible, etc...). Catalyst use
+[[http://search.cpan.org/perldoc?Module::Pluggable][Module::Pluggable]]
+to load the components, so you can easily configure this. In your
+application's configuration, add:
+
+#+BEGIN_EXAMPLE
+    setup_components:
+      except:
+        - MyApp::Model::AAAA
+        - MyAPP::Model::BBBB::REST
+        ...
+#+END_EXAMPLE
+
+Module::Pluggable have some other interesting features. You may have a
+second Catalyst application, and want to use one or more components from
+this one. You can easily do this:
+
+#+BEGIN_EXAMPLE
+    setup_components:
+      search_path:
+        - MyApp
+        - MyOtherApp::Model
+#+END_EXAMPLE

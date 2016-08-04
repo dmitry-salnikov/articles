@@ -1,0 +1,9 @@
+To customize your MySQL prompt, create a .my.cnf file in your $HOME then
+add the following:
+
+#+BEGIN_SRC sh
+    [mysql]
+    prompt="\\u [\\d] >"
+#+END_SRC
+
+Your prompt will now looks like this: =username [dabatases_name] >=

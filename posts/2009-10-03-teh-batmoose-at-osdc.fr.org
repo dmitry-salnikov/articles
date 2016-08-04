@@ -1,0 +1,6 @@
+Today I presented a talk about Moose at [[http://osdc.fr][OSDC.fr]]. The
+slides are available
+[[http://franck.lumberjaph.net/blog/slides/Introduction_a_Moose.pdf][here]]
+
+And big thanks to my friend [[http://www.bwoup.com][Morgan]] for his
+illustration of the batmoose :)
