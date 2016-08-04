@@ -1,0 +1,12 @@
+a really basic way to controll xmms2 from your vim session:
+
+#+BEGIN_EXAMPLE
+    map <leader>xn <Esc>:!xmms2 next<CR><CR>
+    map <leader>xb <Esc>:!xmms2 previous<CR><CR>
+    map <leader>xP <Esc>:!xmms2 pause<CR><CR>
+    map <leader>xp <Esc>:!xmms2 play<CR><CR>
+    map <leader>xs <Esc>:!xmms2 stop<CR><CR>
+#+END_EXAMPLE
+
+now, type =,xn= in vim, and xmms2 will start to play the next track from
+your playlist.

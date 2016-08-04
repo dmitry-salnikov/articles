@@ -1,0 +1,5 @@
+RTGI will be one of the sponsors of the French Perl Workshop 2009. I (or
+Camille, not sure yet) will also give a talk about the Perl and CPAN
+community on the web. Camille (for sure this time) will also give do
+this talk at the YAPC::EU at Lisbon this summer (and in english this
+time).
