@@ -1,7 +1,0 @@
-We ([[http://rtgi.fr][RTGI]]) have been working to update the
-[[http://cpan-explorer.org][cpan-explorer]]. A new version will be
-available this week, before YAPC::EU. Three new maps have been created,
-using different informations than the previous one, and you will be able
-to search and pinpoint the browsable maps.
-
-

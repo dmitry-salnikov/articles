@@ -1,0 +1,7 @@
+I've finally found a printer that can do international shipping for reasonable costs. The price will be 65€, and a paypal account will be setup soon.
+
+  <center>
+
+  </center>
+
+So, if you're interested by a poster in A1 size, send me a mail. I'll need at least 15 persons to be able to do this. So contact me, and I will keep you informed.
