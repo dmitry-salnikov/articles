@@ -58,7 +58,7 @@ To install the Cursive plugin, you need to go to [this page](http://cursivecloju
 
 I can now open a project in Intellij and start coding. I've configured my project to use a remote REPL.
 
-![remote nrepl](../asets/remote-nrepl.webp) Now I can connect to the remote REPL and do a quick test to see if it works:
+![remote nrepl](../assets/remote-nrepl.webp) Now I can connect to the remote REPL and do a quick test to see if it works:
 
 ![nrepl](../assets/test-remote-nrepl.webp) 
 
