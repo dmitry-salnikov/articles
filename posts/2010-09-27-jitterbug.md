@@ -11,19 +11,13 @@ The only problem I had with this is that it wasn't really easy to find the appro
 
 That's when I decided to write an interface to this: [jitterbug](https://github.com/franckcuny/jitterbug).
 
-Demo
-----
+## Demo
 
 [You can check Dancer's version](http://jitterbug.perldancer.org/). The interface is really simple: there's a list of repositories, the status of the last build, and a link to a list of all the project's builds.
 
-  <center>
+![jitterbug](../assets/jitterbug.webp)
 
-!/imgs/jitterbug.webp(jitterbug)!
-
-  </center>
-
-How it works
-------------
+## How it works
 
 For each project you want to use with jitterbug, you set the url of the HTTP hook in the administration page of your project. Each time a push is detected, GH will send you a notification (you can see details of the content). If the project doesn't already exist in your setup, it will be created, so you don't need to maintain or update a configuration file each time you create a new repository. The notification creates a task in a queue, and a script pulls the task and executes it.
 
@@ -35,8 +29,7 @@ This script relies on two important things: [perlbrew](http://github.com/gugod/A
 
 If the test fails, a mail is sent to the author.
 
-What's next
------------
+## What's next
 
 A list of some features I want to have:
 
