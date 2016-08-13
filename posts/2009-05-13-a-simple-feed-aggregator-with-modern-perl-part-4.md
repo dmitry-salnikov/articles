@@ -171,5 +171,3 @@ The function **view** fetch an entry from the kiokudb backend, and store it in t
 If you point your browser to an entry (something like \*<http://localhost:3000/entry/somesha256value*>), you will see an entry:
 
 Et voila, we are done with a really basic feed reader. You can add methods to add or delete feed, mark an entry as read, ...
-
-[The code is available on my git server](http://git.lumberjaph.net/p5-ironman-myfeedreader.git/).

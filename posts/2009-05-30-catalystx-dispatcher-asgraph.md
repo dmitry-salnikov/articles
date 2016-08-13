@@ -2,6 +2,8 @@ This morning I saw [this post](http://marcus.nordaaker.com/awesome-route-graph-w
 
 You use it like this: `perl bin/catalyst_graph_dispatcher.pl --appname Arkham --output routes.png`
 
+![routes](../assets/routes.webp)
+
 You can create a simple script to output as text if you prefer:
 
 ``` perl
@@ -13,7 +15,5 @@ my $graph = CatalystX::Dispatcher::AsGraph->new_with_options();
 $graph->run;
 print $graph->graph->as_txt;
 ```
-
-The code is on [my git server](http://git.lumberjaph.net/p5-catalystx-dispatcher-asgraph.git/) for the moment.
 
 For thoses who are interested by visualization, I'll publish soon some (at least I think) really nice visualisations about CPAN, Perl, and his community, that we have created at [$work](http://rtgi.fr).

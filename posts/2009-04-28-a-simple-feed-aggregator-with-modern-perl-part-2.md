@@ -239,6 +239,4 @@ And it's done :) We got a really basic aggregator now. If you want to improve th
 
 big thanks to [tea](http://bunniesincyberspace.wordpress.com/) and [blob](http://code.google.com/p/tinyaml/) for reviewing and fixing my broken english in the first 2 parts.
 
-[The code is available on git server](http://git.lumberjaph.net/p5-ironman-myaggregator.git/).
-
 Part 3 and 4 next week.

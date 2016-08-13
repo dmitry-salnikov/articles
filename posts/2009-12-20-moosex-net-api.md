@@ -23,7 +23,7 @@ The `twitter_api_method` method is exported with Moose::Exporter. It generates a
 
 \*\* MooseX::Net::API
 
-As I've found this approch nice and simple, I thought about writing a [little framework](http://git.lumberjaph.net/p5-moosex-net-api.git/) to easily write API client this way. I will show how I've write a [client for the Backtype API](http://git.lumberjaph.net/p5-net-backtype.git/) using this (I've wrote some other client for private API at works too).
+As I've found this approch nice and simple, I thought about writing a [little framework](http://github.com/franckcuny/net-http-spore.git/) to easily write API client this way. I will show how I've write a client for the Backtype API using this (I've wrote some other client for private API at works too).
 
 ## Backtype API
 
@@ -100,4 +100,4 @@ In case there is an error, an MooseX::Net::API::Error will be throw.
 
 ## Conclusion
 
-Right now, this module is not finished. I'm looking for suggestions (what should be added, done better, how I can improve stuff, ...). I'm not aiming to handle all possibles API, but at least most of the REST API avaible. I've uploaded a first version of [MooseX::Net::API](http://search.cpan.org/perldoc?MooseX::Net::API) and [Net::Backtype](http://search.cpan.org/perldoc?Net::Backtype) on CPAN, and [the code](http://git.lumberjaph.net/p5-net-backtype.git/) is also [available on my git server](http://git.lumberjaph.net/p5-moosex-net-api.git/).
+Right now, this module is not finished. I'm looking for suggestions (what should be added, done better, how I can improve stuff, ...). I'm not aiming to handle all possibles API, but at least most of the REST API avaible. I've uploaded a first version of [MooseX::Net::API](http://search.cpan.org/perldoc?MooseX::Net::API) and [Net::Backtype](http://search.cpan.org/perldoc?Net::Backtype) on CPAN.

@@ -250,4 +250,4 @@ Execute the tests (you can comment the roles' tests in run.t):
     Result: PASS
 ```
 
-We have our tests, so next step is the Catalyst frontend. As for the precedents parts, [the code is available on my git server](http://git.lumberjaph.net/p5-ironman-myaggregator.git/).
+We have our tests, so next step is the Catalyst frontend.
